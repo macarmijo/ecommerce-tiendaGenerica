@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 90%;
+}
+
+body, .buscador{
+    margin: 0 auto;
+}
+
+header{
+    height: 15vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner{
+    height: 20vh;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.productos{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.producto{
+    background-color: gray;
+    width: 20%;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
