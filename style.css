@@ -10,7 +10,7 @@ body{
 }
 
 a{
-    color: black;
+    color: #2c2c2c;
     text-decoration: none;
 }
 
@@ -51,23 +51,12 @@ h1, h2, h3, h4{
 .w-8{
     width:80%
 }
-
-.m-1{
-    margin:10px
+.mb-3{
+    margin-bottom: 30px;
 }
-.m-2{
-    margin:20px
+.mb-0{
+    margin-bottom: 0;
 }
-.m-3{
-    margin:30px
-}
-.m-4{
-    margin:40px
-}
-.m-5{
-    margin:50px
-}
-
 /* HEADER */
 header{
     position:sticky;
@@ -93,6 +82,7 @@ header{
 
 .fa-solid:not(.fa-magnifying-glass){
     font-size: 1.5em;
+    color: #2c2c2c;
 }
 .burguerMenu{
     display: flex;
@@ -131,9 +121,12 @@ header{
     display: flex;
     align-items: center;
     padding: 0 10px;
-    border-bottom: black solid 1px;
 }
-.searchBox>div>input{
+.searchBox>div, main section:last-of-type{
+    border-bottom: #2c2c2c solid 1px;
+}
+
+.searchBox>div>input, section>input{
     border: none;
     width: 100%;
 }
@@ -161,23 +154,24 @@ img{
     margin-top: 10%;
 }
 .articulosDestacados>h2{
-    margin-left: 30px;
+    margin-left: 10%;
     margin-bottom: 10px;
 }
 #art-destacados-flex{
     display: flex;
     overflow: auto;
-    margin-left: 20px;
+    margin-left: 10%;
+    margin-right: 5%;
 }
-#art-destacados-flex::-webkit-scrollbar {    
+#art-destacados-flex::-webkit-scrollbar-track {    
     display: none;
 }
 
 .artBox{
     border-radius: 20px;
-    height: 30vh;
-    min-width: 40vw;
-    margin-left: 30px;
+    height: 25vh;
+    min-width: 35vw;
+    margin-left: 20px;
 }
 .artBox:first-child{
     margin-left:0;
@@ -185,36 +179,98 @@ img{
 .sin-descuento{
     text-decoration: line-through  1.5px;
 }
-.artBox p{
-    font-size: 10pt;
+.artBox p, #prodBox p{
+    font-size: 9pt;
     text-align: center;
 }
-
-.artBox .imagen{
+.artBox p:last-of-type, #prodBox p:last-of-type{
+    font-size: 8pt;
+}
+.artBox .imagen, #prodBox .imagen{
     height: 60%;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
 
-.artBox .descripcion{
+.artBox .descripcion, #prodBox .descripcion{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 40%;
-    border: 1px solid black;
+    border: 1px solid #2c2c2c;
     border-radius: 0 0 20px 20px;
 }
+.descripcion{
+    padding:3%;
+}
+.imagen{
+    position:relative
+}
+.descuento-stamp{
+    position:absolute;
+    background-color: #0D60F0;
+    border-radius: 50%;
+    padding: 10px 5px;
+    top: 7%;
+    left:65%;
+    color: white;
+    font-size: 8pt;
+    text-align: center;
+    width: 30%;
+    line-height: 1em;
+    font-weight:500
+}
 
+
+
+/* PRODUCTOS */
 #productos-flex{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 15px;
-    margin: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
 }
 #prodBox{
-    width: 30%;
     margin-left: 0;
+    border-radius: 20px;
+    height: 25vh;
+    width: 35vw;
 }
 
+#productos-flex, footer>div{
+    margin: 10px 10%;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(44, 44, 44, 0.2);
+    padding: 7% 0;
+    height: 50vh;
+}
+
+footer>div>section>h6{
+    border-bottom: solid 1px #2c2c2c;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    font-size: 8pt;
+}
+footer section{
+    margin-bottom: 20px
+}
+.fa-brands{
+    font-size: 20pt
+}
+.footer-icons>i{
+    margin-left: 10px;
+}
+.mx-10{
+    margin: 0 10%;
+}
