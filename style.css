@@ -62,11 +62,11 @@ h1, h2, h3, h4{
 }
 /* HEADER */
 header{
+    z-index: 1;
     position:sticky;
     top: 0;
     background-color: white;
     height:12vh;
-    z-index: 1;
 }
 .mainHeader{
     display:flex;
