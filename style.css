@@ -1,50 +1,220 @@
+/* FONTS */
+/* font-family: 'DM Sans', sans-serif; */
 *{
     box-sizing: border-box;
 }
-
 body{
-    max-width: 90%;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    width: auto;
 }
 
-body, .buscador{
-    margin: 0 auto;
+a{
+    color: black;
+    text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0
+}
+p{
+    margin: 0
+}
+h1, h2, h3, h4{
+    margin:0
+}
+/* MOBILE FIRST */
+
+/* reusable variables */
+.w-1{
+    width:10%
+}
+.w-2{
+    width:20%
+}
+.w-3{
+    width:30%
+}
+.w-4{
+    width:40%
+}
+.w-5{
+    width:50%
+}
+.w-6{
+    width:60%
+}
+.w-7{
+    width:70%
+}
+.w-8{
+    width:80%
+}
+
+.m-1{
+    margin:10px
+}
+.m-2{
+    margin:20px
+}
+.m-3{
+    margin:30px
+}
+.m-4{
+    margin:40px
+}
+.m-5{
+    margin:50px
+}
+
+/* HEADER */
 header{
-    height: 15vh;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    height:12vh;
+}
+.mainHeader{
     display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-navbar{
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    flex-wrap: wrap;
+    margin-top: 10px
+}
+#logo{
+    width: 30% 
+}
+.mainHeader>div{
+    width: 20%;
+    text-align: center;
 }
 
-
-.banner{
-    height: 20vh;
-    overflow: hidden;
+.fa-solid:not(.fa-magnifying-glass){
+    font-size: 1.5em;
+}
+.burguerMenu{
+    display: flex;
+    justify-content: center;
 }
 
-.banner img{
+.helpIcons{
+    display:flex;
+    /* chequear */
+    justify-content: center; 
+    /* space-between para desktop */
+    align-items: center; 
+    height: 100%;
+}
+.helpIcons a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    /* height: 100%; */
+}
+.helpIcons a:first-child, .helpIcons a span, .categorias {
+    display:none
+}
+.helpIcons a>span{
+    font-size: 0.7em;
+}
+
+.mainHeader .searchBox{
+    order:1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchBox>div{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: black solid 1px;
+}
+.searchBox>div>input{
+    border: none;
     width: 100%;
 }
 
-.productos{
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
 
+/* BODY */
+.enviosycuotas{
+    background-color: rgb(50, 45, 45);
+    color:white;
+    padding: 0.6rem 0;
+    text-align: center;
+    font-size: 0.9em
 }
 
-.producto{
-    background-color: gray;
-    width: 20%;
-    height: 10em;
+/* IMAGE SET */
+.banner{
+    width: 100vw;
+}
+img{
+    width:100%;
+}
+
+/* Articulos destacados */
+.articulosDestacados{
+    margin-top: 10%;
+}
+.articulosDestacados>h2{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#art-destacados-flex{
+    display: flex;
+    overflow: auto;
+    margin-left: 20px;
+}
+#art-destacados-flex::-webkit-scrollbar {    
+    display: none;
+}
+
+.artBox{
+    border-radius: 20px;
+    height: 30vh;
+    min-width: 40vw;
+    margin-left: 30px;
+}
+.artBox:first-child{
+    margin-left:0;
+}
+.sin-descuento{
+    text-decoration: line-through  1.5px;
+}
+.artBox p{
+    font-size: 10pt;
+    text-align: center;
+}
+
+.artBox .imagen{
+    height: 60%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.artBox .descripcion{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 0 0 20px 20px;
 }
+
+#productos-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    margin: 10px 30px;
+}
+#prodBox{
+    width: 30%;
+    margin-left: 0;
+}
+
