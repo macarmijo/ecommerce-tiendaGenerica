@@ -57,12 +57,16 @@ h1, h2, h3, h4{
 .mb-0{
     margin-bottom: 0;
 }
+.mx-10{
+    margin: 0 10%;
+}
 /* HEADER */
 header{
     position:sticky;
     top: 0;
     background-color: white;
     height:12vh;
+    z-index: 1;
 }
 .mainHeader{
     display:flex;
@@ -153,16 +157,18 @@ img{
 .articulosDestacados{
     margin-top: 10%;
 }
-.articulosDestacados>h2{
+.articulosDestacados{
     margin-left: 10%;
+}
+.articulosDestacados>h2{
     margin-bottom: 10px;
 }
 #art-destacados-flex{
     display: flex;
     overflow: auto;
-    margin-left: 10%;
     margin-right: 5%;
 }
+
 #art-destacados-flex::-webkit-scrollbar-track {    
     display: none;
 }
@@ -228,17 +234,12 @@ img{
 #productos-flex{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    grid-gap: 30pt;
 }
 #prodBox{
     margin-left: 0;
     border-radius: 20px;
     height: 25vh;
-    width: 35vw;
-}
-
-#productos-flex, footer>div{
-    margin: 10px 10%;
 }
 
 /* FOOTER */
@@ -262,15 +263,12 @@ footer>div{
     height: 90%;
     font-size: 8pt;
 }
-footer section{
-    margin-bottom: 20px
+footer section p{
+    margin-bottom: .2rem
 }
 .fa-brands{
     font-size: 20pt
 }
 .footer-icons>i{
     margin-left: 10px;
-}
-.mx-10{
-    margin: 0 10%;
 }
