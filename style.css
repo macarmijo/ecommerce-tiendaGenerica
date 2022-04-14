@@ -66,15 +66,14 @@ header{
     position:sticky;
     top: 0;
     background-color: white;
-    height:12vh;
+    padding: 6% 0;
 }
 .mainHeader{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
+    /* height: 7vh; */
     flex-wrap: wrap;
-    margin-top: 10px
 }
 #logo{
     width: 30% 
@@ -84,9 +83,8 @@ header{
     text-align: center;
 }
 
-.fa-solid:not(.fa-magnifying-glass){
+.fa-cart-shopping, .fa-circle-question, .fa-bars{
     font-size: 1.5em;
-    color: #2c2c2c;
 }
 .burguerMenu{
     display: flex;
@@ -120,6 +118,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5%
 }
 .searchBox>div{
     display: flex;
@@ -175,7 +174,7 @@ img{
 
 .artBox{
     border-radius: 20px;
-    height: 25vh;
+    min-height: 25vh;
     min-width: 35vw;
     margin-left: 20px;
 }
@@ -183,7 +182,8 @@ img{
     margin-left:0;
 }
 .sin-descuento{
-    text-decoration: line-through  1.5px;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
 }
 .artBox p, #prodBox p{
     font-size: 9pt;
@@ -193,7 +193,7 @@ img{
     font-size: 8pt;
 }
 .artBox .imagen, #prodBox .imagen{
-    height: 60%;
+    /* height: 60%; */
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
@@ -203,7 +203,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 40%;
+    /* height: 40%; */
     border: 1px solid #2c2c2c;
     border-radius: 0 0 20px 20px;
 }
@@ -237,9 +237,15 @@ img{
     grid-gap: 30pt;
 }
 #prodBox{
-    margin-left: 0;
     border-radius: 20px;
-    height: 25vh;
+    height: 100%;
+    display: inline-block;
+}
+#prodBox .descripcion{
+    height: 40%;
+}
+#prodBox .imagen{
+    height: 60%;
 }
 
 /* FOOTER */
