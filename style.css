@@ -26,7 +26,7 @@ h1, h2, h3, h4{
 }
 /* MOBILE FIRST */
 
-/* reusable variables */
+/* variables reusables */
 .w-1{
     width:10%
 }
@@ -72,7 +72,6 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 7vh; */
     flex-wrap: wrap;
 }
 #logo{
@@ -83,7 +82,7 @@ header{
     text-align: center;
 }
 
-.fa-cart-shopping, .fa-circle-question, .fa-bars{
+.fa-cart-shopping, .fa-circle-question, .fa-bars, .feather-shopping-cart{
     font-size: 1.5em;
 }
 .burguerMenu{
@@ -93,9 +92,7 @@ header{
 
 .helpIcons{
     display:flex;
-    /* chequear */
     justify-content: center; 
-    /* space-between para desktop */
     align-items: center; 
     height: 100%;
 }
@@ -104,7 +101,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
-    /* height: 100%; */
 }
 .helpIcons a:first-child, .helpIcons a span, .categorias {
     display:none
@@ -164,17 +160,16 @@ img{
 }
 #art-destacados-flex{
     display: flex;
-    overflow: auto;
+    overflow-x: auto;
     margin-right: 5%;
 }
 
-#art-destacados-flex::-webkit-scrollbar-track {    
+#art-destacados-flex::-webkit-scrollbar {    
     display: none;
 }
 
 .artBox{
     border-radius: 20px;
-    min-height: 25vh;
     min-width: 35vw;
     margin-left: 20px;
 }
@@ -193,7 +188,6 @@ img{
     font-size: 8pt;
 }
 .artBox .imagen, #prodBox .imagen{
-    /* height: 60%; */
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
@@ -203,7 +197,6 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* height: 40%; */
     border: 1px solid #2c2c2c;
     border-radius: 0 0 20px 20px;
 }
@@ -218,14 +211,15 @@ img{
     background-color: #0D60F0;
     border-radius: 50%;
     padding: 10px 5px;
-    top: 7%;
-    left:65%;
+    top: 1em;
+    left:calc(100% - 4em - 5%);
     color: white;
     font-size: 8pt;
     text-align: center;
-    width: 30%;
     line-height: 1em;
-    font-weight:500
+    font-weight:500;
+    width: 4em;
+    height: 4em;
 }
 
 
@@ -238,21 +232,19 @@ img{
 }
 #prodBox{
     border-radius: 20px;
-    height: 100%;
-    display: inline-block;
 }
-#prodBox .descripcion{
-    height: 40%;
+#prodBox .descripcion, .artBox .descripcion{
+    min-height: 40%;
 }
-#prodBox .imagen{
-    height: 60%;
+#prodBox .imagen, .artBox .imagen{
+    max-height: 60%;
 }
 
 /* FOOTER */
 footer{
     background-color: rgba(44, 44, 44, 0.2);
     padding: 7% 0;
-    height: 50vh;
+    min-height: 60vh;
 }
 
 footer>div>section>h6{
