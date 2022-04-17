@@ -3,6 +3,9 @@
     max-height: 70vh;
     border-bottom: 1.5px solid rgba(44, 44, 44, 0.3);
 }
+.producto-carrousel, .borderBottom{
+    border-bottom: 1.5px solid rgba(44, 44, 44, 0.3);
+}
 
 .producto-carrousel>div:first-of-type{
     /* display: flex;
@@ -129,16 +132,17 @@ h3.sin-descuento{
     justify-content: space-between;
     border-bottom: 1px solid #2c2c2c;
     padding: 5% 0;
-
 }
 .carrito-compra>div:first-of-type{
-    width: 6.5em;
-    height: 6.5em;
-    border-radius: 10pt;
+    width: 5rem;
+    border-radius: 5px;
     overflow: hidden;
 }
 .carrito-compra h6{
     font-size: 1.1em;
+}
+#carrito-cantidad{
+    width: 50%;
 }
 #carrito-cantidad i {
     font-size: 1.6em;
