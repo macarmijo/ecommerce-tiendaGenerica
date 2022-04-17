@@ -5,14 +5,15 @@
 }
 
 .producto-carrousel>div:first-of-type{
-    display: flex;
-    overflow-x: auto;
+    /* display: flex;
+    overflow-x: auto; 
+    en style.css*/
     margin: 3% 0 0 3%;
 }
 
 .artBox-prodCarrousel{
     min-width: 80vw;
-    max-height: 50vh;
+    max-height: 40vh;
     margin-right: 3%;
     overflow-y: hidden;
 }
@@ -107,7 +108,7 @@ h3.sin-descuento{
     position: relative
 }
 .retiro-tienda p{
-    font-size: .8em
+    font-size: .85em
 }
 .retiro-tienda span{
     font-weight: 500;

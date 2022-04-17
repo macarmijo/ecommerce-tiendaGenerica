@@ -81,7 +81,7 @@ header{
     position:sticky;
     top: 0;
     background-color: white;
-    padding: 6% 0 3%;
+    padding: 5% 0 4%;
 }
 .mainHeader{
     display:flex;
@@ -98,7 +98,7 @@ header{
 }
 
 .fa-cart-shopping, .fa-circle-question, .fa-bars, .feather-shopping-cart{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .burguerMenu{
     display: flex;
@@ -143,6 +143,12 @@ header{
 .searchBox>div>input, section>input{
     border: none;
     width: 100%;
+    font-size: 0.95em;
+}
+
+.fa-magnifying-glass{
+    font-size: 0.95em;
+    color: #2c2c2c78;
 }
 
 
@@ -167,7 +173,7 @@ img{
 .articulosDestacados>h2{
     margin-bottom: 10px;
 }
-#art-destacados-flex{
+#art-destacados-flex, .producto-carrousel>div:first-of-type{
     display: flex;
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -180,7 +186,7 @@ img{
 
 .artBox{
     border-radius: 20px;
-    min-width: 35vw;
+    min-width: 38vw;
     margin-right: 20px;
 }
 .artBox:first-child{
@@ -194,10 +200,11 @@ img{
 .artBox p, #prodBox p{
     font-size: 9pt;
     text-align: center;
+    line-height: 1.2em;
 }
-.artBox p:last-of-type, #prodBox p:last-of-type{
+/* .artBox p:last-of-type, #prodBox p:last-of-type{
     font-size: 8pt;
-}
+} */
 .artBox .imagen, #prodBox .imagen{
     overflow: hidden;
     border-radius: 20px 20px 0 0;
@@ -212,7 +219,7 @@ img{
     border-radius: 0 0 20px 20px;
 }
 .descripcion, .producto-carrousel>div:last-of-type{
-    padding:3%;
+    padding:.45em;
 }
 .imagen{
     position:relative
@@ -239,7 +246,7 @@ img{
 #productos-flex{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30pt;
+    grid-gap: 25pt;
 }
 #prodBox{
     border-radius: 20px;
@@ -268,9 +275,9 @@ footer>div>section>h6{
 footer>div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90%;
-    font-size: 8pt;
+    justify-content: space-around;
+    height: 50vh;
+    font-size: 9pt;
 }
 footer section p{
     margin-bottom: .2rem
