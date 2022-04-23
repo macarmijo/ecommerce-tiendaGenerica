@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: rgba(44, 44, 44, 0.8);
+    color: rgba(44, 44, 44, 1);
 }
 
 ul{
@@ -31,7 +31,27 @@ strong{
     color: #2c2c2c
 }
 h1, h2, h3, h4, h5, h6{
-    margin:0
+    margin:0;
+    font-family: 'DM Sans bold', sans-serif;
+}
+h1{
+    
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 12px;
 }
 /* MOBILE FIRST */
 
@@ -75,6 +95,12 @@ h1, h2, h3, h4, h5, h6{
 .mright-7{
     margin-right: 7%;
 }
+.pr-7{
+    padding-right: 7%;
+}
+.pl-7{
+    padding-left: 7%;
+}
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -93,7 +119,7 @@ header{
     position:sticky;
     top: 0;
     background-color: white;
-    padding: 5% 0 4%;
+    padding: 1rem 0 1rem;
     /* border-bottom: 1px solid rgba(44, 44, 44, 0.4); */
     -webkit-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
     -moz-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
@@ -113,7 +139,7 @@ header{
     text-align: center;
 }
 
-.fa-cart-shopping, .fa-circle-question, .fa-bars, .feather-shopping-cart{
+.fa-cart-shopping, .fa-circle-question, .fa-bars, .feather-shopping-cart, .fa-google{
     font-size: 1.3em;
 }
 .burguerMenu{
@@ -201,7 +227,6 @@ img{
 }
 
 .artBox{
-    border-radius: 20px;
     min-width: 38vw;
     margin-right: 20px;
 }
@@ -223,7 +248,7 @@ img{
 } */
 .artBox .imagen, #prodBox .imagen{
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .artBox .descripcion, #prodBox .descripcion{
@@ -232,7 +257,7 @@ img{
     align-items: center;
     justify-content: space-around;
     border: 1px solid #2c2c2c;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
 }
 .descripcion, .producto-carrousel>div:last-of-type{
     padding:.45em;
@@ -277,25 +302,27 @@ img{
 /* FOOTER */
 footer{
     background-color: rgba(44, 44, 44, 0.2);
-    padding: 7% 0;
+}
+footer#buyers{
     min-height: 60vh;
+    padding: 7% 0;
 }
 
-footer>div>section>h6{
+.buyers-footer>section>h6{
     border-bottom: solid 1px #2c2c2c;
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-footer>div{
+.buyers-footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 50vh;
     font-size: 9pt;
 }
-footer section p{
+.buyers-footer section p{
     margin-bottom: .2rem
 }
 .fa-brands{
@@ -311,3 +338,7 @@ footer section p{
     border-radius: 20px;
 
 } */
+/* BUTTONS */
+button[type=submit]{
+    appearance: none;
+}

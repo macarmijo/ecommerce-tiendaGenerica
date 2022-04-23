@@ -54,10 +54,12 @@
             </ul>
         </navbar>
     </header>
-    <main class="my-3 mx-10">
-        <h1>Carrito de compras</h1>
+    <h1 class="cart-title">
+        <span class="">Carrito de compras</span>
+    </h1>
 
-        <section class="mt-4">
+    <main class="my-3 mx-10">
+        <section class="mt-3">
             <div class="carrito-compra">
                 <div>
                     <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
@@ -134,7 +136,7 @@
             <p><span>Tortuguitas:</span> Luis Maria Drago 130.</p>
             <p>Lunes a Viernes de 11 a 19hs - sábados de 10 a 13hs.</p>
         </section>
-        <form action="" class="my-4 carrito-form">
+        <form action="../ecommerce-tiendaGenerica/compra_exitosa.html" method="" class="my-4 carrito-form">
             <input type="text" name="" id="" placeholder="Nombre y Apellido / Empresa">
             <input type="number" name="" id="" placeholder="Id">
             <input type="email" name="" id="" placeholder="Email">
@@ -142,23 +144,18 @@
             <input type="text" name="" id="" placeholder="Calle | Número | Departamento">
             <input type="text" name="" id="" placeholder="Ciudad">
             <input type="text" name="" id="" placeholder="Código Postal">
+            <div class="my-5">
+                <button type="submit" class="text-uppercase btn-submit">Comprar</button>
+                <a href="index.html">
+                    <div class="seguir-compra mt-2">
+                        <p>Seguir comprando</p>
+                    </div>
+                </a>
+            </div>
         </form>
-        <div class="my-5">
-            <a href="compra_exitosa.html">
-                <div class="submit-btn">
-                    <p>COMPRAR</p>
-                    <input type="submit" />
-                </div>
-            </a>
-            <a href="index.html">
-                <div class="seguir-compra mt-2">
-                    <p>Seguir comprando</p>
-                </div>
-            </a>
-        </div>
     </main>
-    <footer>
-        <div class="mb-0 mx-10">
+    <footer id="buyers">
+        <div class="mb-0 mx-10 buyers-footer">
             <section>
                 <h6>Contacto</h6>
                 <div class="mb-2">

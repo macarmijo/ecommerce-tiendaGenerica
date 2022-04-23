@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.mx-10{
+    margin: 0 7%;
+}
+a{
+    color:rgba(44, 44, 44, 0.8);
+    text-decoration: none;
+}
+h1{
+    font-weight: 300;
+}
+header{
+    background-color: #fff;
+    -webkit-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
+    -moz-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
+    box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
+}
+.mainHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logo{
+    width: 30% 
+}
+.mainHeader>div{
+    width: 20%;
+    text-align: center;
+}
+.user-icon a, .fa-google, .fa-facebook-square{
+    font-size: 1.3em;
+} 
+.sellers-footer{
+    background-color: rgba(44, 44, 44, 0.6);
+    text-align: center;
+}
+.sellers-footer p{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1.5em 1.5em 2em;
+    font-size: 9pt;
+}
+.sellers-footer a{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.img-bienvenida{
+    width: 70%;
+    margin: 0 auto;
+}
+.sellers-bienvenida-form input:not(input[type=radio], input[type=file]){
+    border: none;
+    border-bottom: 2px solid #2c2c2c8f;
+    width: 100%;
+    margin-bottom: 1.2em;
+    padding: 2%;
+    color:rgba(44, 44, 44, 1);
+}
+
+.btn-register{
+    width: 100%;
+    margin-top: .7em;
+    justify-content: space-between;
+}
+.btn-red{
+    background-color: rgb(221, 19, 19);
+    margin-bottom: 0;
+}
+.btn-register span{
+    width: 90%;
+    text-align: center;
+}
+.btn-submit-rev{
+    border: 2px solid #0D60F0;
+    background-color: #fff;
+    color: #0D60F0;
+}
+
+.required:hover{
+    color:rgba(44, 44, 44, 0.4)
+}
+
+.required i{
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    background-color: rgba(44, 44, 44, 0.3);
+    padding: .5em;
+    text-align: justify;
+    color: #fff;
+    font-size: 9pt;
+    margin-left: 3pt;
+    border-radius: 3px;
+}
+.opt-box ul{
+    margin-top: .8em;
+}
+.opt-box div label{
+    margin-left: .25em;
+    color:rgba(44, 44, 44, 0.6)
+}
+.tooltipp i{
+    position: relative;
+    display: inline-block;
+    opacity: none;
+    color: #fff;
+    border: #2c2c2c 1px solid;
+    border-radius: 100%;
+    background-color: #2c2c2c;
+  }
+.tooltiptextt {
+    visibility: hidden;
+    width: 35%;
+    background-color: rgba(44, 44, 44, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    display: inline-block;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipp:hover .tooltiptextt {
+visibility: visible;
+background-color: rgba(44, 44, 44, 0.4);
+padding: .5em;
+text-align: left;
+color: #fff;
+font-size: 9pt;
+margin-left: 3pt;
+border-radius: 3px;
+}
+
+.opt-box{
+    margin-top: 2em;
+}
+
+label{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.btn-add{
+    background: none;
+    border: none;
+    font-weight: 500;
+}
+.sbt-file{
+    /* background-color: yellow; */
+    width: 100%;
+    overflow: hidden;
+    border: 1px dashed #2c2c2c;
+    border-radius: 10px;
+    margin-top: 1em;
+    height: 15vh;
+    /* padding: .6em; */
+}
+.sbt-file div p{
+    /* float: right; */
+    /* z-index: 1; */
+    color: #2c2c2c8f;
+    font-size:  11pt;
+    font-weight: 400;
+}
+.sbt-file div{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fa-solid.fa-image{
+    font-size: 1.8em;
+    color: rgba(44, 44, 44, 0.4);
+}
+#file-input{
+    font-size: 11pt;
+    color:rgba(44, 44, 44, 0.3);
+    z-index: 1;
+    position: absolute;
+    width: 60%;
+    height: 15vh;
+    margin: 0 13%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    border-radius: 10px;
+    /* left: 7%; */
+}
+#file-input::file-selector-button{
+    border: none;
+    background: none;
+    color: transparent;
+    width: 100%;
+    height: 11vh;
+    display: block;
+}
+#file-input, .text-aclarativo{
+    font-size: 11pt;
+    color:rgba(44, 44, 44, 0.5)
+}
+.sbt-file:hover{
+    background-color: rgba(44, 44, 44, 0.1);
+    border: 2px dashed rgba(44, 44, 44, 1);
+    cursor: pointer;
+} 
+.opt-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+    grid-column-gap: 15%;
+}
+/* .text-aclarativo{
+    color:rgba(44, 44, 44, 0.6);
+    font-size: 11pt;
+} */
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #2c2c2c
+}
+

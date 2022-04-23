@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- My style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="sellers.css">
+    <!-- Font awesome ICONS -->
+    <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
+    <title>Home page</title>
+</head>
+<body>
+    <header>
+        <section class="mainHeader">
+            <div class="burguerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="logo">
+                <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
+            </div>
+            <div class="user-icon">
+                <a href="mis-datos.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </section> 
+    </header>
+    <h1 class="pl-7 py-2 cart-title">Mis Datos</h1>
+    <main class="seller-body mx-10 my-4">
+
+        <form action="" class="my-4 sellers-bienvenida-form">
+            <label for="">Nombre de la tienda</label>
+            <input type="text" name="" id="" >
+            
+            <label for="">Email</label>
+            <input type="email" name="" id="" >
+        
+            <label for="">País</label>
+            <input type="text" name="" id="" >
+            
+            <label for="">Nombre y Apellido / Empresa</label>
+            <input type="text" name="" id="" >
+            
+            <label for="">ID</label>
+            <input type="number" name="" id="" >
+            
+            <label for="">
+                Teléfono de contacto 
+                <span class="tooltipp d-inline-block">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
+                </span>
+            </label>
+            <input type="text" name="" id="" >
+            
+
+            <section class="opciones-producto mt-3">
+                <label>Selección 1</label>
+                <div class="mt-1">
+                    <select name="selec1" id="selec1">
+                        <option>Opción 1</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <label class="mt-4">Selección 2</label>
+                <div class="mt-1">
+                    <select name="selec1" id="selec1">
+                        <option>Opción 1</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </section>
+            <section class="opt-box">
+                <label>Select Box</label>
+                <div class="mt-2">
+                    <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>
+                    <label for="opc1">Opción 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="opc2" name="opcion2" value="opc2" />
+                    <label for="opc2">Opción 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="opc3" name="opcion3" value="opc3"/>
+                    <label for="opc3">Opción 3</label>
+                </div>
+            </section>
+
+            <button type="submit" class="text-uppercase btn-submit">guardar</button>
+        </form>
+    </main>
+    <footer>
+        <div class="sellers-footer">
+            <p>Copyright - Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos <a href="#" target="_blank">ingrese aquí</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

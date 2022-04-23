@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- My style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="sellers.css">
+    <!-- Font awesome ICONS -->
+    <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
+    <title>Home page</title>
+</head>
+<body>
+    <header>
+        <section class="mainHeader">
+            <div class="burguerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="logo">
+                <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
+            </div>
+            <div >
+                <div class="user-icon">
+                    <a href="mis-datos.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </section> 
+    </header>
+    <main class="seller-body mx-10 my-4">
+        <h1 class="w-75">¡Te damos la bienvenida!</h1>
+
+        <div class="img-bienvenida">
+            <img src="../img/img-bienvenida.png" alt="bienvenida logo"/>
+        </div>
+
+        <!-- action : url donde lleva dsp de cargar el formulario - puse mi-tienda solo para mejor navegación de la página - este formulario deberia llevar a una pagina o pop up de inicio de sesión -->
+        <form action="../sellers/mi-tienda.html" class="my-4 sellers-bienvenida-form">
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="password" name="" id="" placeholder="Contraseña">
+        
+            <!-- comentar esta sección para no ver INICIAR SESION + Olvidé mi contraseña -->
+            <section class="my-3">
+                <button type="submit" class="text-uppercase btn-submit">Iniciar sesion</button>
+                
+                <a href="index.html">
+                    <div class="seguir-compra mt-2">
+                        <p>Olvidé mi contraseña</p>
+                    </div>
+                </a>
+                <div class="w-50 mx-auto">
+                    <hr>
+                </div>
+            </section>
+            <!-- Hasta acá -->
+
+            <section>
+                <button type="submit" class="text-uppercase btn-submit btn-register btn-red">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Ingresar con google</span>
+                </button>
+                <button type="submit" class="text-uppercase btn-submit btn-register">
+                    <i class="fa-brands fa-facebook-square"></i> 
+                    <span>Ingresar con facebook</span>
+                </button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <div class="sellers-footer">
+            <p>Copyright - Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos <a href="#" target="_blank">ingrese aquí</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
