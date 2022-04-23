@@ -128,7 +128,7 @@ h3.sin-descuento{
     font-size: .85em
 }
 .retiro-tienda span{
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* carrito compras */
@@ -149,7 +149,7 @@ h3.sin-descuento{
     font-size: 1.1em;
 }
 #carrito-cantidad{
-    width: 50%;
+    width: 40%;
 }
 #carrito-cantidad i {
     font-size: 1.6em;
@@ -168,7 +168,7 @@ h3.sin-descuento{
 }
 
 .imp{
-    font-weight: 450;
+    font-weight: bold;
 }
 /* CARRITO */
 .cart-title{
