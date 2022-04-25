@@ -13,6 +13,8 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/producto.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
     <title>Home page</title>
@@ -35,7 +37,7 @@
             </div>
             <div class="helpIcons">
                 <a href="">
-                    <i class="fa-light fa-circle-question"></i>
+                    <i class="fa-solid fa-circle-question"></i>
                     <span>Ayuda</span>
                 </a>
                 <a href="finalizar_compra.html">
@@ -47,7 +49,7 @@
         </section> 
         <navbar class="categorias">
             <ul>
-                <li><a href="">Categorias</a></li>
+                <li>Categorias <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="">Politicas de cambio</a></li>
                 <li><a href="">Novedades</a></li>
                 <li><a href="">Contacto</a></li>
@@ -56,87 +58,99 @@
     </header>
     <main class="mb-3">
         <section class="enviosycuotas">Envíos sin cargo desde $5.500 | 6 cuotas sin interés</section>
-        <section class="producto-carrousel">
-            <div>
-                <div class="artBox-prodCarrousel imagen">
-                    <div class="descuento-stamp">15% OFF</div>
-                    <img src="img/macetaterrazo0-91-687070d7252d2d2fb616389389659753-1024-1024.jpg" alt="producto img1" />
-                </div>
-                <div class="artBox-prodCarrousel">
-                    <img src="img/macetascorteza0-11-661b0a0ff8715cdb2316391392304137-1024-1024.jpg" alt="producto img2" />
-                </div>
-                <div class="artBox-prodCarrousel">
-                    <img src="img/macetadiana0-21-8a8c8079d7438c751516401966734822-1024-1024.jpg" alt="producto img3" />
-                </div>
-            </div>
-            <div class="text-center">1/8</div>
-        </section>
-        <section class="prod-header-categoria mx-10 mt-3">
-            <div class="descripcion-seccion w-6">
-                <p>Categoria</p><span>></span>
-                <p>Seccion</p><span>></span>
-                <p>Articulo </p>
-            </div>
-            <h1 class="mt-3">Maceta Terrazo</h1>
-            <h3 class="sin-descuento d-inline-block me-2">$1100</h3> 
-            <h2 class="d-inline-block">$935</h2>
-            <div class="mt-4">
-                <p>
-                    <i class="fa-solid fa-credit-card"></i>
-                    <strong>6</strong> cuotas sin interés de <strong>$183,33</strong>
-                </p>
-            </div>
-            <div class="mt-1">
-                <p>
-                    <i class="fa-solid fa-money-bills"></i>
-                    <strong>10% de descuento</strong> pagando en efectivo
-                </p>
-            </div>
-        </section>
-        <section class="mx-10">
-            <form class="mt-4" action="../ecommerce-tiendaGenerica/finalizar_compra.html" method="get">
-                <div class="opciones-producto">
-                    <label>Selección 1</label>
-                    <div class="mt-1">
-                        <select name="selec1" id="prod-selec1">
-                            <option>Opción 1</option>
-                            <option>Opción 2</option>
-                            <option>Opción 3</option>
-                        </select>
-                        <i class="fa-solid fa-arrow-down"></i>
+        <div class="producto-carrousel-tablet">
+            <section class="producto-carrousel">
+                <div>
+                    <div class="artBox-prodCarrousel imagen">
+                        <div class="descuento-stamp">15% OFF</div>
+                        <img src="img/macetaterrazo0-91-687070d7252d2d2fb616389389659753-1024-1024.jpg" alt="producto img1" />
                     </div>
-                    <label class="mt-3">Selección 2</label>
-                    <div class="mt-1">
-                        <select name="selec1" id="prod-selec2">
-                            <option>Opción 1</option>
-                            <option>Opción 2</option>
-                            <option>Opción 3</option>
-                        </select>
-                        <i class="fa-solid fa-arrow-down"></i>
+                    <div class="artBox-prodCarrousel">
+                        <img src="img/macetascorteza0-11-661b0a0ff8715cdb2316391392304137-1024-1024.jpg" alt="producto img2" />
+                    </div>
+                    <div class="artBox-prodCarrousel">
+                        <img src="img/macetadiana0-21-8a8c8079d7438c751516401966734822-1024-1024.jpg" alt="producto img3" />
+                    </div>
+                    <div class="artBox-prodCarrousel">
+                        <img src="img/macetadiana0-21-8a8c8079d7438c751516401966734822-1024-1024.jpg" alt="producto img3" />
+                    </div>
+                    <div class="artBox-prodCarrousel">
+                        <img src="img/macetastotem0-631-c1724ab8049d8cc88816385418611228-1024-1024.jpg" alt="producto img3" />
                     </div>
                 </div>
-                <label class="mt-4">Cantidad</label>
-                <div class="producto-cantidad mt-1">
-                    <i class="fa-solid fa-circle-minus"></i>
-                    <input type="text" value="1">
-                    <i class="fa-solid fa-circle-plus"></i>
+                <div class="text-center borderBottom">1/8</div>
+                <div class="descripcion-seccion w-6 mt-2 mx-10">
+                    <p>Categoria</p><span>></span>
+                    <p>Seccion</p><span>></span>
+                    <p>Articulo </p>
                 </div>
-                <button type="submit" class="text-uppercase btn-submit">Agregar al carrito</button>
-            </form>
-        </section>
+            </section>
+            <section class="mx-10 descripcion-producto">
+                <h1>Maceta Terrazo</h1>
+                <p class="sin-descuento d-inline-block me-2">$1100</p> 
+                <p class="d-inline-block"><strong>$935</strong></p>
+                <div>
+                    <p>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <strong>6</strong> cuotas sin interés de <strong>$183,33</strong>
+                    </p>
+                </div>
+                <div class="mt-1">
+                    <p>
+                        <i class="fa-solid fa-money-bills"></i>
+                        <strong>10% de descuento</strong> pagando en efectivo
+                    </p>
+                </div>
+            <!-- </section>
+            <section class="mx-10"> -->
+                <form class="mt-4" action="../ecommerce-tiendaGenerica/finalizar_compra.html" method="get">
+                    <div class="opciones-producto">
+                        <label>Selección 1</label>
+                        <div class="mt-1">
+                            <select name="selec1" id="prod-selec1">
+                                <option>Opción 1</option>
+                                <option>Opción 2</option>
+                                <option>Opción 3</option>
+                            </select>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <label class="mt-3">Selección 2</label>
+                        <div class="mt-1">
+                            <select name="selec1" id="prod-selec2">
+                                <option>Opción 1</option>
+                                <option>Opción 2</option>
+                                <option>Opción 3</option>
+                            </select>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <label class="mt-4">Cantidad</label>
+                    <div class="producto-cantidad mt-1">
+                        <i class="fa-solid fa-circle-minus"></i>
+                        <input type="text" value="1">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <button type="submit" class="text-uppercase btn-submit">Agregar al carrito</button>
+                </form>
+            </section>
+        </div>
         <section class="mx-10 mt-4 retiro-tienda">
-            <h5><i class="fa-solid fa-truck me-1"></i> Envio a domicilio</h5>
-            <h5 class="mt-1"><i class="fa-solid fa-store me-1"></i> Retiro en tienda:</h5>
-            <p class="mt-2"><span>Palermo:</span> Armenia 1585.</p>
-            <p>Lunes a Viernes de 10 a 20hs. Sabados de 10 a 19hs.</p>
-            <p><span>Tortuguitas:</span> Luis Maria Drago 130.</p>
-            <p>Lunes a Viernes de 11 a 19hs - sábados de 10 a 13hs.</p>
-            <h5 class="mt-4">Descripcion del producto</h5>
-            <p class="mt-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolores debitis, maiores id, atque, libero rerum quos minus illum nisi adipisci fugiat quam. Ullam tempore ab iure quas, corrupti fugiat.
-            </p>
-            <p class="mt-3">Chica: Diámetro 15cm / Altura (con plato): 13,5cm</p>
-            <p>Grande: Diámetro 18cm / Altura (con plato): 16,5cm</p>
+            <div>
+                <h5><i class="fa-solid fa-truck me-1"></i> Envio a domicilio</h5>
+                <h5 class="mt-1"><i class="fa-solid fa-store me-1"></i> Retiro en tienda:</h5>
+                <p class="mt-2"><span>Palermo:</span> Armenia 1585.</p>
+                <p>Lunes a Viernes de 10 a 20hs. Sabados de 10 a 19hs.</p>
+                <p><span>Tortuguitas:</span> Luis Maria Drago 130.</p>
+                <p>Lunes a Viernes de 11 a 19hs - sábados de 10 a 13hs.</p>
+            </div>
+            <div>
+                <h5 class="mt-4">Descripcion del producto</h5>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolores debitis, maiores id, atque, libero rerum quos minus illum nisi adipisci fugiat quam. Ullam tempore ab iure quas, corrupti fugiat.
+                </p>
+                <p class="mt-3">Chica: Diámetro 15cm / Altura (con plato): 13,5cm</p>
+                <p>Grande: Diámetro 18cm / Altura (con plato): 16,5cm</p>
+            </div>
         </section>
         <section class='articulosDestacados mleft-7 my-5'>
             <h2>Articulos Similares</h2>

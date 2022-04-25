@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- My style sheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
     <title>Home page</title>
@@ -30,11 +32,10 @@
                     <input type="search" name="searchBar" id="searchBar" placeholder="¿Qué estás buscando?">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-            
             </div>
             <div class="helpIcons">
                 <a href="">
-                    <i class="fa-light fa-circle-question"></i>
+                    <i class="fa-solid fa-circle-question"></i>
                     <span>Ayuda</span>
                 </a>
                 <a href="finalizar_compra.html">
@@ -46,7 +47,13 @@
         </section> 
         <navbar class="categorias">
             <ul>
-                <li><a href="">Categorias</a></li>
+                <li>
+                    <select name="categ-select" id="categ-select">
+                        <option value="" selected>Categorias</option>
+                        <button type="submit"><option value="categ1" >Categoria 1</option></button>
+                        <option value="categ2" ><button type="submit">Categoria 2</button></option>
+                    </select>
+                </li>
                 <li><a href="">Politicas de cambio</a></li>
                 <li><a href="">Novedades</a></li>
                 <li><a href="">Contacto</a></li>
@@ -60,50 +67,64 @@
         </section>
         <section class='articulosDestacados mleft-7 mt-4'>
             <h2>Articulos Destacados</h2>
-            <div id="art-destacados-flex">
-                <div class='artBox'>
-                    <a href="/ecommerce-tiendaGenerica/producto.html">
-                        <div class="imagen"><img src="img/almohadoneshoja.jpg" alt="imagen articulo1" ></div>
-                        <div class="descripcion">
-                            <p><strong>Almohadon Hoja nombre largo</strong></p>
-                            <p><strong> $935</strong></p>
-                            <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
-                        </div>
-                    </a>
+            <div class="flex-row">
+                <span><i class="fa-solid fa-angle-left"></i></span>
+                <div id="art-destacados-flex">
+                    <div class='artBox'>
+                        <a href="/ecommerce-tiendaGenerica/producto.html">
+                            <div class="imagen"><img src="img/almohadoneshoja.jpg" alt="imagen articulo1" ></div>
+                            <div class="descripcion">
+                                <p><strong>Almohadon Hoja nombre largo</strong></p>
+                                <p><strong> $935</strong></p>
+                                <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='artBox'>
+                        <a href="/ecommerce-tiendaGenerica/producto.html">
+                            <div class="imagen">
+                                <div class="descuento-stamp">15% OFF</div>
+                                <img src="img/macetastotem0-6111-e3bb203bfabe464f5516385422060465-1024-1024.jpg" alt="imagen articulo1" >
+                            </div>
+                            <div class="descripcion">
+                                <p><strong>Nombre del producto</strong></p>
+                                <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
+                                <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='artBox'>
+                        <a href="/ecommerce-tiendaGenerica/producto.html">
+                            <div class="imagen"><div class="descuento-stamp">15% OFF</div><img src="img/pulverizadores0-51-82e6658f2b2242578d16388393924975-1024-1024.jpg" alt="imagen articulo1" ></div>
+                            <div class="descripcion">
+                                <p><strong>Pulverizador Planta</strong></p>
+                                <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
+                                <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='artBox'>
+                        <a href="/ecommerce-tiendaGenerica/producto.html">
+                            <div class="imagen"><div class="descuento-stamp">15% OFF</div><img src="img/pometina01-fd23d53c0fb9e751c716391869732626-1024-1024.jpg" alt="imagen articulo1" ></div>
+                            <div class="descripcion">
+                                <p><strong>Planta Pometina</strong></p>
+                                <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
+                                <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='artBox'>
+                        <a href="/ecommerce-tiendaGenerica/producto.html">
+                            <div class="imagen"><div class="descuento-stamp">15% OFF</div><img src="img/pometina01-fd23d53c0fb9e751c716391869732626-1024-1024.jpg" alt="imagen articulo1" ></div>
+                            <div class="descripcion">
+                                <p><strong>Planta Pometina</strong></p>
+                                <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
+                                <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class='artBox'>
-                    <a href="/ecommerce-tiendaGenerica/producto.html">
-                        <div class="imagen">
-                            <div class="descuento-stamp">15% OFF</div>
-                            <img src="img/macetastotem0-6111-e3bb203bfabe464f5516385422060465-1024-1024.jpg" alt="imagen articulo1" >
-                        </div>
-                        <div class="descripcion">
-                            <p><strong>Nombre del producto</strong></p>
-                            <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
-                            <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
-                        </div>
-                    </a>
-                </div>
-                <div class='artBox'>
-                    <a href="/ecommerce-tiendaGenerica/producto.html">
-                        <div class="imagen"><div class="descuento-stamp">15% OFF</div><img src="img/pulverizadores0-51-82e6658f2b2242578d16388393924975-1024-1024.jpg" alt="imagen articulo1" ></div>
-                        <div class="descripcion">
-                            <p><strong>Pulverizador Planta</strong></p>
-                            <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
-                            <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
-                        </div>
-                    </a>
-                </div>
-                <div class='artBox'>
-                    <a href="/ecommerce-tiendaGenerica/producto.html">
-                        <div class="imagen"><div class="descuento-stamp">15% OFF</div><img src="img/pometina01-fd23d53c0fb9e751c716391869732626-1024-1024.jpg" alt="imagen articulo1" ></div>
-                        <div class="descripcion">
-                            <p><strong>Planta Pometina</strong></p>
-                            <p><strong><span class="sin-descuento">$1100</span> $935</strong></p>
-                            <p><strong>6</strong> cuotas sin interés de <strong>$183,33</strong></p>
-                        </div>
-                    </a>
-                </div>
+                <span><i class="fa-solid fa-angle-right"></i></span>
             </div>
         </section>
         <section class='articulosDestacados mb-3 mx-10 mt-4'>

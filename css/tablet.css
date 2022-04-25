@@ -1,0 +1,213 @@
+/* TABLET */
+@media (min-width: 420px){
+
+    /* FONTS */
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 18px;
+    }
+    .burguerMenu{
+        display: none
+    }
+    header{
+        padding-bottom:1rem;
+        border:none;
+        box-shadow: none;
+    }
+    .mainHeader .searchBox{
+        order: 0;
+        width: 45%;
+        align-items: center;
+        margin-top: 0;
+    }
+    .searchBox div{
+        width: 100%;
+    }
+    .mainHeader{
+        padding-bottom: 1.2em;
+        /* border-bottom: 2px solid rgba(44, 44, 44, 0.7); */
+        -webkit-box-shadow:0px 1.2px 1.2px rgba(44, 44, 44, 0.7);
+        -moz-box-shadow:0px 1.2px 1.2px rgba(44, 44, 44, 0.7);
+        box-shadow:0px 1.2px 1.2px rgba(44, 44, 44, 0.7);
+    }
+    #logo{
+        margin-left: 7%;
+        width: 15%;
+    }
+    .mainHeader .helpIcons{
+        margin-right: 7%;
+        width: 15%;
+    }
+    .helpIcons a:first-child, .helpIcons a span{
+        display: flex;
+    }
+    .helpIcons, #art-destacados-flex {
+        justify-content: space-between;
+    }
+    .categorias{
+        display: block;
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+    .categorias ul{
+        display: flex;
+        margin: 0 7%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 11pt;
+    }
+    .categorias ul li{
+        width: 25%;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    #categ-select{
+        border: none;
+        background: none;
+    }
+    .enviosycuotas{
+        font-size: 11pt;
+    }
+    /* articulos y productos */
+    .articulosDestacados{
+        margin: 0 5% 1em;
+    }
+    .articulosDestacados>.flex-row>span{
+        display: inline;
+        font-size: 3em;
+        color:rgba(44, 44, 44, 0.4);
+        margin: 0 auto;
+    }
+    #art-destacados-flex{
+       width: 90%;
+       margin: 0
+
+    }
+    #art-destacados-flex .artBox{
+        min-width: 25%;
+    }
+    .artBox p, #prodBox p{
+        font-size: 11pt
+    }
+    /* Productos */
+    #productos-flex{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20pt;
+        margin: 0 2%;
+    }
+    .novedades{
+        display: flex;
+        justify-content: space-around;
+        border: none;
+    }
+    .novedades input{
+        width: 40%;
+        border-bottom: rgba(44, 44, 44, 0.7) solid 2px;
+    }
+    .producto-carrousel-tablet{
+        margin: 0 5%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .producto-carrousel{
+        width: 70%;
+    }
+    .producto-carrousel-tablet section:last-of-type{
+        margin: 4.5em 0 0;
+        width: 40%;
+    }
+    .descripcion-producto h1{
+        margin-top: 0;
+    }
+    .artBox-prodCarrousel{
+        min-width: fit-content;
+        border-radius: 15px;
+    }
+    .producto-carrousel>div:first-of-type{
+        display: grid;
+        grid-template-columns: 4em 1fr;
+        grid-template-rows: repeat(6, 4em);
+        grid-gap: .4em;
+    }
+    .artBox-prodCarrousel:nth-of-type(1){
+        grid-column-start: 2 ;
+        grid-row-start: 1;
+        grid-row-end: -1;
+    } 
+    .producto-carrousel .borderBottom{
+        display: none;
+    }
+    .producto-carrousel{
+        overflow: hidden;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .descripcion-producto>p{
+        font-size: 25px
+    }
+    .descripcion-producto div:first-of-type{
+        margin-top: .5rem
+    }
+    .producto-carrousel .descripcion-seccion{
+        /* margin: 0 auto; */
+        padding: 1em 0;
+    }
+    .descripcion-seccion p, .descripcion-seccion span{
+        font-size: 1em ;
+    }
+    .producto-cantidad {
+        width: 50%;
+    }
+    .retiro-tienda{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .retiro-tienda div:first-of-type{
+        width: 100%;
+    }
+    .mleft-7 h2{
+        text-align: left;
+    }
+    #art-destacados-flex{
+        width: 100%;
+    }
+
+    /* BTN */
+    .btn-submit{
+        width: 257px;
+        height: 44px;
+    }
+    /* footer */
+    footer#buyers{
+        min-height: 20vh;
+        padding: 2em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buyers-footer{
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        font-size: 11pt;
+    }
+
+    
+}
