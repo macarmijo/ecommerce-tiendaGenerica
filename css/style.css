@@ -180,7 +180,7 @@ header{
     padding: 0 10px;
 }
 .searchBox>div, .novedades{
-    border-bottom: #2c2c2c solid 1px;
+    border-bottom: rgba(44, 44, 44, 0.7) solid 2px;
 }
 
 .searchBox>div>input, section>input{
