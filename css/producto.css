@@ -11,7 +11,9 @@
 .producto-carrousel>div:first-of-type{
     margin: 3% 0 0 3%;
 }
-
+.producto-carrousel>div .artBox-prodCarrousel:last-of-type{
+    display: none;
+}
 .artBox-prodCarrousel{
     min-width: 80vw;
     max-height: 40vh;
@@ -33,13 +35,25 @@
 }
 .descripcion-producto h1{
     margin-top: 1rem;
+    margin-bottom: .5rem;
 }
 .descripcion-producto>p{
-    font-size: 22px
+    font-size: 25px
 }
-.descripcion-producto div:first-of-type{
+.descripcion-producto>div:first-of-type{
     margin-top: 1.5rem
 }
+form div.opciones-producto>div{
+    margin-bottom: 1.25rem;
+    margin-top: .25rem;
+}
+.descripcion-producto label{
+    margin-left: 2%;
+}
+.descripcion-producto form{
+    margin: 2rem 0 3rem;
+}
+
 .producto-pagos{
     display: flex;
     flex-direction: row;
@@ -58,7 +72,8 @@
 	-moz-appearance: none;
     display: inline-block;
 	cursor: pointer;
-  	padding: 3%;
+  	padding: 4% 6%;
+    font-size: 16px;
 	background-color: white;
 	color: #999;
 	border:1px solid rgba(44, 44, 44, 0.7);
@@ -81,32 +96,30 @@
     width: 100%;
     text-align: center;
     color:rgba(44, 44, 44, 0.7);
-    font-size: 1.2em;
+    font-size: 16px;
     padding: 0;
 }
 .producto-cantidad{
     width: 40%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8%;
+    padding: 1%;
 }
 .producto-cantidad i{
-    font-size: 2.2em;
+    font-size: 2em; 
 }
 .btn-submit{
     background-color: #0D60F0;
     padding: 3% 8%;
     border-radius: 40px;
-    margin: 1em auto 0.5em;
+    margin: 1.5em auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     color: #fff;
-    min-width: 60%;
-    font-size: 11pt;
+    width: 261px;
+    height: 55px;
+    font-size: 12pt;
 }
 .btn-link-gen{
     background-color: #0D60F0;
@@ -129,10 +142,15 @@
     font-size: 11pt;
 }
 .retiro-tienda p{
-    font-size: .85em
+    font-size: 14px;
+    line-height: 1.4em;
 }
 .retiro-tienda span{
-    font-weight: 600;
+    display: block;
+    margin-top: .5rem;
+}
+.retiro-tienda span i{
+    font-size: 20px;
 }
 
 /* carrito compras */
