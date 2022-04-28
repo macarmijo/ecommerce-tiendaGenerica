@@ -195,6 +195,12 @@ h6{
 .ml-5{
     margin-left:3rem
 }
+.ms-auto{
+    margin-left: auto;
+}
+.d-none{
+    display:none
+}
 .text-center{
     text-align: center;
 }

@@ -90,10 +90,13 @@ form div.opciones-producto>div{
 	right: 20px;
 	top: calc(50% - .5em);
 }
+#compra-botones-tablet{
+    display:none;
+}
 
 .producto-cantidad input{
     border: none;
-    width: 100%;
+    width: 40%;
     text-align: center;
     color:rgba(44, 44, 44, 0.7);
     font-size: 16px;
@@ -102,7 +105,10 @@ form div.opciones-producto>div{
 .producto-cantidad{
     width: 40%;
     display: flex;
-    padding: 1%;
+    padding: 1% .5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 .producto-cantidad i{
     font-size: 2em; 
@@ -111,7 +117,7 @@ form div.opciones-producto>div{
     background-color: #0D60F0;
     padding: 3% 8%;
     border-radius: 40px;
-    margin: 1.5em auto;
+    margin: 1.5em auto 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,10 +129,11 @@ form div.opciones-producto>div{
 }
 .btn-link-gen{
     background-color: #0D60F0;
-    width: 60%;
+    width: 261px;
+    height: 55px;
     padding: 3% 8%;
     border-radius: 40px;
-    margin: 0 auto;
+    margin: 5rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +171,8 @@ form div.opciones-producto>div{
 }
 .carrito-compra>div:first-of-type{
     width: 5rem;
-    border-radius: 5px;
+    height: 5rem;
+    border-radius: 10px;
     overflow: hidden;
 }
 .carrito-compra h6{
@@ -172,13 +180,12 @@ form div.opciones-producto>div{
 }
 #carrito-cantidad{
     width: 40%;
+    padding: .5%;
 }
 #carrito-cantidad i {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
-#carrito-cantidad input {
-    font-size: 1.1em;
-}
+
 .fa-trash-can, .total{
     font-size: 1.2em;
 }
@@ -218,4 +225,7 @@ input[type=number]{
 }
 .seguir-compra p:hover{
     text-decoration: underline;
+}
+.compra-exitosa h1{
+    margin: 1.5rem 0;
 }

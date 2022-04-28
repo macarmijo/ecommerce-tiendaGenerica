@@ -63,25 +63,6 @@ header{
     color:rgba(44, 44, 44, 1);
 }
 
-.btn-register{
-    width: 100%;
-    margin-top: .7em;
-    justify-content: space-between;
-}
-.btn-red{
-    background-color: rgb(221, 19, 19);
-    margin-bottom: 0;
-}
-.btn-register span{
-    width: 90%;
-    text-align: center;
-}
-.btn-submit-rev{
-    border: 2px solid #0D60F0;
-    background-color: #fff;
-    color: #0D60F0;
-}
-
 .required:hover{
     color:rgba(44, 44, 44, 0.4)
 }

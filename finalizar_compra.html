@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/producto.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/btn.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
     <title>Home page</title>
@@ -49,117 +50,147 @@
         </section> 
         <navbar class="categorias">
             <ul>
-                <li><a href="">Categorias</a></li>
+                <li>Categorias <i class="fa-solid fa-angle-down"></i></li>
                 <li><a href="">Politicas de cambio</a></li>
                 <li><a href="">Novedades</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
         </navbar>
     </header>
-    <h1 class="cart-title">
-        <span class="">Carrito de compras</span>
-    </h1>
-
-    <main class="my-3 mx-10">
-        <section class="mt-3">
-            <div class="carrito-compra">
-                <div>
-                    <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
-                </div>
-                <div class="flex-column  ms-2 pe-3">
-                    <div class="flex-row">
-                        <h6>Maceta Terrazo <span>x1</span></h6>
-                        <i class="fa-solid fa-trash-can"></i>
+    <div class="marco-externo">
+        <h1 class="cart-title">
+            <span class="">Carrito de compras</span>
+        </h1>
+    
+        <main class="my-3 mx-10 finalizar-compra">
+            <section class="mt-3">
+                <div class="carrito-compra">
+                    <div>
+                        <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
                     </div>
-                    <div class="producto-cantidad" id="carrito-cantidad">
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <input type="text" value="1">
-                        <i class="fa-solid fa-circle-plus"></i>
-                    </div>
-                    <div  class="ms-auto">
-                        <span>$ 1.100</span>
-                    </div>
-                </div>
-            </div>
-            <div class="carrito-compra">
-                <div>
-                    <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
-                </div>
-                <div class="flex-column  ms-2 pe-3">
-                    <div class="flex-row">
-                        <h6>Maceta Terrazo <span>x1</span></h6>
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                    <div class="producto-cantidad" id="carrito-cantidad">
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <input type="text" value="1">
-                        <i class="fa-solid fa-circle-plus"></i>
-                    </div>
-                    <div  class="ms-auto">
-                        <span>$ 1.100</span>
+                    <div class="flex-column  ms-2 pe-3">
+                        <div class="flex-row">
+                            <h5>Maceta Terrazo <span>x1</span></h5>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <div class="producto-cantidad" id="carrito-cantidad">
+                            <i class="fa-solid fa-circle-minus"></i>
+                            <input type="text" value="1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div  class="ms-auto">
+                            <span>$ 1.100</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <p class="flex-row mt-3 imp">Subtotal <span>$2.200</span></p>
-            <p class="flex-row mt-1 borderBottom pb-3">Descuento por cupón (%15) <span class="imp">$1.870</span></p>
-            <h4 class="flex-row mt-3 imp">
-                <span>Total</span>
-                <span>$1.870</span>
-            </h4>
-        </section>
-
-        <h3 class="mt-5">Datos de contacto</h4>
-        <section class="opciones-producto mt-3">
-            <label>Método de pago</label>
-            <div class="mt-1">
-                <select name="selec1" id="selec1">
-                    <option>Tarjeta de crédito</option>
-                    <option>Opción 2</option>
-                    <option>Opción 3</option>
-                </select>
-                <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <label class="mt-4">Forma de entrega</label>
-            <div class="mt-1">
-                <select name="selec2" id="selec2">
-                    <option>Medio de envío</option>
-                    <option>Opción 2</option>
-                    <option>Opción 3</option>
-                </select>
-                <i class="fa-solid fa-arrow-down"></i>
-            </div>
-        </section>
-        <section class="mt-5 retiro-tienda">
-            <h5><i class="fa-solid fa-store me-1"></i> Retiro en tienda:</h6>
-            <p class="mt-2"><span>Palermo:</span> Armenia 1585.</p>
-            <p>Lunes a Viernes de 10 a 20hs. Sabados de 10 a 19hs.</p>
-            <p><span>Tortuguitas:</span> Luis Maria Drago 130.</p>
-            <p>Lunes a Viernes de 11 a 19hs - sábados de 10 a 13hs.</p>
-        </section>
-        <form action="../ecommerce-tiendaGenerica/compra_exitosa.html" method="" class="my-5 carrito-form">
-            <input type="text" name="" id="" placeholder="Nombre y Apellido / Empresa">
-            <input type="number" name="" id="" placeholder="Id">
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="tel" name="" id="" placeholder="Teléfono de contacto">
-            <input type="text" name="" id="" placeholder="Calle | Número | Departamento">
-            <input type="text" name="" id="" placeholder="Ciudad">
-            <input type="text" name="" id="" placeholder="Código Postal">
-            <div class="my-5">
-                <button type="submit" class="text-uppercase btn-submit">Comprar</button>
-                <a href="index.html">
-                    <div class="seguir-compra mt-2">
-                        <p>Seguir comprando</p>
+                <div class="carrito-compra">
+                    <div>
+                        <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
                     </div>
-                </a>
-            </div>
-        </form>
+                    <div class="flex-column  ms-2 pe-3">
+                        <div class="flex-row">
+                            <h5>Maceta Terrazo <span>x1</span></h5>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <div class="producto-cantidad" id="carrito-cantidad">
+                            <i class="fa-solid fa-circle-minus"></i>
+                            <input type="text" value="1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div  class="ms-auto">
+                            <span>$ 1.100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrito-compra">
+                    <div>
+                        <img src="img/macetaterrazo01-71b1b7fa52527cc1ec16389389663017-1024-1024.jpg" alt="">
+                    </div>
+                    <div class="flex-column  ms-2 pe-3">
+                        <div class="flex-row">
+                            <h5>Maceta Terrazo <span>x1</span></h5>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <div class="producto-cantidad" id="carrito-cantidad">
+                            <i class="fa-solid fa-circle-minus"></i>
+                            <input type="text" value="1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div  class="ms-auto">
+                            <span>$ 1.100</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="flex-row mt-3 imp">Subtotal <span>$2.200</span></p>
+                <p class="flex-row mt-1 borderBottom pb-3">Descuento por cupón (%15) <span class="imp">$1.870</span></p>
+                <h4 class="flex-row mt-3 imp">
+                    <span>Total</span>
+                    <span>$1.870</span>
+                </h4>
+            </section>
+    
+            <h3 class="mt-5">Datos de contacto</h4>
+            <section class="opciones-producto mt-3">
+                <label>Método de pago</label>
+                <div class="mt-1">
+                    <select name="selec1" id="selec1">
+                        <option>Tarjeta de crédito</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div id="compra-botones-tablet">
+                    <button type="button" class="text-uppercase btn-submit">Tarjeta de Débito</button>
+                    <button type="button" class="text-uppercase btn-submit btn-submit-rev">Tarjeta de Crédito</button>
+                    <button type="button" class="text-uppercase btn-submit btn-submit-rev">Efectivo</button>
+                </div>
+                <label class="mt-4">Forma de entrega</label>
+                <div class="mt-1">
+                    <select name="selec2" id="selec2">
+                        <option>Medio de envío</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div id="compra-botones-tablet">
+                    <button type="button" class="text-uppercase btn-submit">Medio de envio</button>
+                    <button type="button" class="text-uppercase btn-submit btn-submit-rev">Locales Físicos</button>
+                </div>
+            </section>
+            <section class="mt-5 retiro-tienda">
+                <span><i class="fa-solid fa-store me-1"></i><strong>Retiro en tienda:</strong></span>
+                <p class="mt-2"><strong>Palermo:</strong> Armenia 1585.</p>
+                <p>Lunes a Viernes de 10 a 20hs. Sabados de 10 a 19hs.</p>
+                <p><strong>Tortuguitas:</strong> Luis Maria Drago 130.</p>
+                <p>Lunes a Viernes de 11 a 19hs - sábados de 10 a 13hs.</p>
+            </section>
+            <form action="../ecommerce-tiendaGenerica/compra_exitosa.html" method="" class="my-5 carrito-form">
+                <input type="text" name="" id="" placeholder="Nombre y Apellido / Empresa">
+                <input type="number" name="" id="" placeholder="Id">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="tel" name="" id="" placeholder="Teléfono de contacto">
+                <input type="text" name="" id="" placeholder="Calle | Número | Departamento">
+                <input type="text" name="" id="" placeholder="Ciudad">
+                <input type="text" name="" id="" placeholder="Código Postal">
+                <div class="my-5">
+                    <button type="submit" class="text-uppercase btn-submit">Comprar</button>
+                    <a href="index.html">
+                        <div class="seguir-compra mt-2">
+                            <p>Seguir comprando</p>
+                        </div>
+                    </a>
+                </div>
+            </form>
+    </div>
     </main>
     <footer id="buyers">
         <div class="mb-0 mx-10 buyers-footer">
             <section>
-                <h6>Contacto</h6>
+                <h5>Contacto</h5>
                 <div class="mb-2">
                     <a href="mailto:tienda@pretti.com" >
                         <i class="fa-solid fa-envelope me-2"></i>tienda@pretti.com
@@ -173,13 +204,13 @@
                 </div>
             </section>
             <section>
-                <h6>Categorias</h6>
+                <h5>Categorias</h5>
                 <p>Macetas y Accesorios</p>
                 <p>Sustratos y Orgánicos</p>
                 <p>Casa planta</p>
             </section>
             <section>
-                <h6>Redes Sociales</h6>
+                <h5>Redes Sociales</h5>
                 <div class="footer-icons">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-facebook-square"></i>
@@ -189,7 +220,5 @@
             </section>
         </div>
     </footer>
-
-    
 </body>
 </html>
