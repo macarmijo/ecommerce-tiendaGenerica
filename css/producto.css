@@ -20,14 +20,17 @@
     margin-right: 3%;
     overflow-y: hidden;
 }
-.descripcion-seccion{
+.descripcion-seccion, .descripcion-seccion-desktop{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.descripcion-seccion>span{
+.descripcion-seccion>span,  .descripcion-seccion-desktop>span{
     color: rgba(44, 44, 44, 0.8);
     font-size: 0.8em;
+}
+.descripcion-seccion-desktop{
+    display:none
 }
 .descripcion-seccion>p{
     color: rgba(44, 44, 44, 0.7);

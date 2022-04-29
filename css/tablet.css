@@ -157,11 +157,11 @@
         justify-content: space-between;
     }
     .producto-carrousel{
-        width: 60%;
+        width: 70%;
     }
     .producto-carrousel-tablet section:last-of-type{
-        margin: 3rem 0 0;
-        width: 40%;
+        margin: 0;
+        width: 45%;
     }
     .descripcion-producto h2{
         margin-top: 0;
@@ -177,10 +177,13 @@
         border-radius: 15px;
        
     }
+    .producto-carrousel{
+        max-height: none;
+    }
     .producto-carrousel>div:first-of-type{
         display: grid;
-        grid-template-columns: 4em 1fr;
-        grid-template-rows: repeat(6, 4em);
+        grid-template-columns: 3.5em 1fr;
+        grid-template-rows: repeat(6, 3.5em);
         grid-gap: .4em;
         overflow: hidden;
     }
@@ -195,12 +198,12 @@
     .producto-carrousel .borderBottom{
         display: none;
     }
-    .producto-carrousel{
+    /* .producto-carrousel{
         overflow: hidden;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-    }
+    } */
     .producto-carrousel>div .artBox-prodCarrousel:last-of-type{
         background-color: rgba(44, 44, 44, 0.3);
         display: flex;
@@ -241,11 +244,21 @@
         padding: 3% 6%;
         font-size: 14px;
     }
-    .producto-carrousel .descripcion-seccion{
+    .descripcion-seccion-desktop{
+        display: flex;
+        width: 40%;
+        margin-left: 7%;
+        margin-top: 2em;
+        font-size: 1em;
+    }
+    .descripcion-seccion{
+        display: none;
+    }
+    .producto-carrousel .descripcion-seccion-desktop{
         margin: 0;
         padding-bottom: 1.5rem;
     }
-    .descripcion-seccion p, .descripcion-seccion span{
+    .descripcion-seccion-desktop p, .descripcion-seccion-desktop span{
         font-size: 1em ;
     }
     .opciones-producto>div{

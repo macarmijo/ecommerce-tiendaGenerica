@@ -340,7 +340,7 @@ main.producto .articulosDestacados h3{
     margin-left:0;
 }
 main#home>section.articulosDestacados>h2{
-    margin-bottom 1em;
+    margin-bottom: 1em;
 }
 .sin-descuento{
     text-decoration-line: line-through;
