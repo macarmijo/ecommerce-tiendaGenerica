@@ -1,12 +1,12 @@
 /* TABLET */
-@media (min-width: 620px){
+@media (min-width: 600px){
 
     /* FONTS */
     h1{
         font-size: 45px;
     }
     h2{
-        text-align: center;
+        /* text-align: center; */
         font-size: 40px;
     }
     h3{
@@ -241,7 +241,10 @@
     .retiro-tienda div:last-of-type{
         margin-top:0;
     }
-    .mleft-7 h2{
+    .articulosDestacados h2 {
+        text-align: center;
+    }
+    .producto .articulosDestacados h2{
         text-align: left;
     }
     main.producto #art-destacados-flex{
@@ -255,7 +258,7 @@
     }
     /* footer */
     footer#buyers{
-        min-height: 20vh;
+        min-height: 30vh;
         padding: 2em 0;
         display: flex;
         align-items: center;

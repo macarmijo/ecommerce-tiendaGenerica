@@ -1,0 +1,63 @@
+@media (min-width: 1024px){
+    /* FONTS */
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 15px;
+    }
+    .btn-submit, .btn-submit-gen{
+        width: 372px;
+        height: 72px;
+    }
+    .banner{
+        height: 55vh;
+        overflow: hidden;
+    }
+    .articulosDestacados h2{
+        margin-top: 1em
+    }
+    
+    /* header */
+    .mainHeader{
+        margin-top: 1em;
+        justify-content: space-around;
+    }
+    .searchBox > div > input, section > input, .categorias ul{
+        font-size: 14pt;
+    }
+    #logo{
+        margin-left: 0;
+    }
+    .mainHeader .helpIcons{
+        margin-right: 0;
+        justify-content: space-between;
+    }
+    .helpIcons i{
+        font-size: 1.5em;
+    }
+    /* Articulos y productos */
+    #art-destacados-flex .artBox{
+        min-width: 20%;
+    }
+    #prodBox, #art-destacados-flex .artBox{
+        height: 40vh;
+    }
+    /* FOOTER */
+    footer#buyers{
+        min-height: 30vh;
+    }
+
+}
