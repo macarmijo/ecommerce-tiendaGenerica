@@ -275,9 +275,9 @@
         width: 6rem;
         height: 6em;
     }
-    .carrito-compra>div:last-of-type{
+    /* .carrito-compra>div:last-of-type{
         width: 80%;
-    }
+    } */
     #carrito-cantidad{
         width: 20%;
     }
