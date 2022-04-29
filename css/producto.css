@@ -134,7 +134,7 @@ form div.opciones-producto>div{
     background-color: #0D60F0;
     width: 261px;
     height: 55px;
-    padding: 3% 8%;
+    /* padding: 3% 8%; */
     border-radius: 40px;
     margin: 5rem auto;
     display: flex;

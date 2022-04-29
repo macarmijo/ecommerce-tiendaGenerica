@@ -351,24 +351,25 @@
         margin-top: .5em
     }
     #compra-botones-tablet{
-        display: flex;
+        display: inline-block;
         width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
+        /* flex-direction: row;
+        justify-content: space-around; */
         margin-top: 1em;
     }
     .opciones-producto>div.mt-1{
         display: none;
     }
     #compra-botones-tablet button{
+        display: inline-block;
         margin: 0;
         padding: 0;
         font-size: 12px;
-        width: 180px;
+        width: 32%;
         height: 3em;
     }
     #compra-botones-tablet:last-of-type{
-        width: 67%;
+        width: 100%;
     }
     main.finalizar-compra .retiro-tienda{
         flex-direction: column;

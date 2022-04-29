@@ -207,6 +207,9 @@ h6{
 .d-inline-block{
     display: inline-block;
 }
+.dis-block{
+    display:block;
+}
 .text-uppercase{
     text-transform: uppercase;
 }
