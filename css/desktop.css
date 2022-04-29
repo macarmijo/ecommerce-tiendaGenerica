@@ -19,15 +19,18 @@
         font-size: 15px;
     }
     .btn-submit, .btn-submit-gen{
-        width: 372px;
-        height: 72px;
+        width: 342px;
+        height: 52px;
     }
     .banner{
         max-height: 55vh;
         overflow: hidden;
     }
-    .articulosDestacados h2{
+    .articulosDestacados h3{
         margin-top: 1em
+    }
+    .descripcion-producto form{
+        margin-bottom: 0;
     }
     
     /* header */
@@ -67,6 +70,9 @@
         padding: 1em;
         justify-content: space-between;
     }
+    #prodBox .descripcion{
+        padding: .5em;
+    }
     .artBox p, #prodBox p{
         font-size: 13.5pt;
         padding: 0;
@@ -77,7 +83,7 @@
     .descripcion p.price, #prodBox p.price{
         font-size: 20px;
     }
-    .artBox p:last-of-type, #prodBox p:last-of-type{
+    .artBox p:last-of-type, #prodBox p:last-of-type, .opc-pago p, .retiro-tienda p{
         font-size: 12pt;
     }
     /* descuento stamp */
@@ -92,7 +98,7 @@
     .producto-carrousel > div:first-of-type{
         grid-template-columns: 5em 1fr;
         grid-template-rows: repeat(6, 5em);
-        grid-gap: .4em;
+        grid-gap: .2em;
     }
     .artBox-prodCarrousel:nth-of-type(1){
         grid-column-start: 2 ;
@@ -108,6 +114,39 @@
     .producto-carrousel-tablet section:last-of-type{
         width: 42%;
     }
+    form .opciones-producto label:last-of-type{
+        margin-top: 0;
+    }
+    /* form div.opciones-producto > div{
+        margin-bottom: 1rem
+    } */
+    .opc-pago p{
+        font-size: 16px;
+    }
+    .opciones-producto > div{
+        width: 55%;
+    }
+    .producto-cantidad{
+        width: 25%;
+    }
+    main.producto .btn-submit{
+        margin-left: 0;
+    }
+    .retiro-tienda span{
+        font-size: 18px;
+    }
+    .retiro-tienda div:first-of-type{
+        width: 40%;
+    }
+    .retiro-tienda div:last-of-type{
+        width: 57%;
+        /* padding-right: 1em; */
+
+    }
+    .retiro-tienda{
+        justify-content: space-between;
+    }
+    
     /* FOOTER */
     footer#buyers{
         min-height: 40vh;

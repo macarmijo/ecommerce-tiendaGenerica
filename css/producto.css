@@ -33,7 +33,7 @@
     color: rgba(44, 44, 44, 0.7);
     font-size: 0.85em;
 }
-.descripcion-producto h1{
+.descripcion-producto h2{
     margin-top: 1rem;
     margin-bottom: .5rem;
 }
@@ -158,6 +158,9 @@ form div.opciones-producto>div{
 }
 .retiro-tienda span i{
     font-size: 20px;
+}
+.retiro-tienda div:last-of-type{
+    margin-top:1.5rem;
 }
 
 /* carrito compras */

@@ -29,7 +29,7 @@ p, label{
 }
 
 h1, h2, h3, h4, h5, h6{
-    margin:0;
+    /* margin:0; */
     color: #2c2c2c;
 }
 h1, h2, h3{
@@ -308,8 +308,9 @@ img{
 }
 
 /* Articulos destacados */
-.articulosDestacados>h2{
+main.producto .articulosDestacados h3{
     margin-bottom: 10px;
+    font-size: 1.6em;
 }
 .articulosDestacados>.flex-row>span{
     display: none;
@@ -337,6 +338,9 @@ img{
 }
 .artBox:first-child{
     margin-left:0;
+}
+main#home>section.articulosDestacados>h2{
+    margin-bottom 1em;
 }
 .sin-descuento{
     text-decoration-line: line-through;
