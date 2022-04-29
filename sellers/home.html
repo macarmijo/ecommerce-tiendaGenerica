@@ -13,12 +13,13 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/btn.css">
     <link rel="stylesheet" href="sellers.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
     <title>Home page</title>
 </head>
-<body>
+<body id="sellers" class="flex-column">
     <header>
         <section class="mainHeader">
             <div class="burguerMenu">
@@ -27,53 +28,58 @@
             <div id="logo">
                 <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
             </div>
-            <div >
-                <div class="user-icon">
-                    <a href="mis-datos.html">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </div>
+            <div class="user-icon">
+                <a href="" class="dis-none">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Más info</span>
+                </a>
+                <a href="mis-datos.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="dis-none">Mis cuenta</span>
+                </a>
             </div>
         </section> 
     </header>
-    <main class="seller-body mx-10 my-4">
-        <h1 class="w-75">¡Te damos la bienvenida!</h1>
-
-        <div class="img-bienvenida">
-            <img src="../img/img-bienvenida.png" alt="bienvenida logo"/>
-        </div>
-
-        <!-- action : url donde lleva dsp de cargar el formulario - puse mi-tienda solo para mejor navegación de la página - este formulario deberia llevar a una pagina o pop up de inicio de sesión -->
-        <form action="../sellers/mi-tienda.html" class="my-4 sellers-bienvenida-form">
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" name="" id="" placeholder="Contraseña">
+    <main class="seller-body">
+        <h1>¡Te damos la bienvenida!</h1>
         
-            <!-- comentar esta sección para no ver INICIAR SESION + Olvidé mi contraseña -->
-            <!-- <section class="my-3">
-                <button type="submit" class="text-uppercase btn-submit">Iniciar sesion</button>
+        <section>
+            <div class="img-bienvenida">
+                <img src="../img/img-bienvenida.png" alt="bienvenida logo"/>
+            </div>
+    
+            <!-- action : url donde lleva dsp de cargar el formulario - puse mi-tienda solo para mejor navegación de la página - este formulario deberia llevar a una pagina o pop up de inicio de sesión -->
+            <form action="../sellers/mi-tienda.html" class="my-4 sellers-bienvenida-form">
                 
-                <a href="index.html">
-                    <div class="seguir-compra mt-2">
-                        <p>Olvidé mi contraseña</p>
+                <!-- comentar esta sección para no ver INICIAR SESION + Olvidé mi contraseña -->
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="password" name="" id="" placeholder="Contraseña">
+                <section class="my-3">
+                    <button type="submit" class="text-uppercase btn-submit">Iniciar sesion</button>
+                    
+                    <a href="index.html">
+                        <div class="seguir-compra mt-2">
+                            <p>Olvidé mi contraseña</p>
+                        </div>
+                    </a>
+                    <div class="w-50 mx-auto">
+                        <hr>
                     </div>
-                </a>
-                <div class="w-50 mx-auto">
-                    <hr>
-                </div>
-            </section> -->
-            <!-- Hasta acá -->
-
-            <section>
-                <button type="submit" class="text-uppercase btn-submit btn-register btn-red">
-                    <i class="fa-brands fa-google"></i>
-                    <span>Ingresar con google</span>
-                </button>
-                <button type="submit" class="text-uppercase btn-submit btn-register">
-                    <i class="fa-brands fa-facebook-square"></i> 
-                    <span>Ingresar con facebook</span>
-                </button>
-            </section>
-        </form>
+                </section>
+                <!-- Hasta acá -->
+    
+                <section>
+                    <button type="submit" class="text-uppercase btn-submit btn-register btn-red">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Ingresar con google</span>
+                    </button>
+                    <button type="submit" class="text-uppercase btn-submit btn-register">
+                        <i class="fa-brands fa-facebook-square"></i> 
+                        <span>Ingresar con facebook</span>
+                    </button>
+                </section>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="sellers-footer">

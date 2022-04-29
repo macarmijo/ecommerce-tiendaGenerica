@@ -12,7 +12,16 @@ a{
     text-decoration: none;
 }
 h1{
-    font-weight: 300;
+    font-weight: 500;
+}
+#sellers{
+    height: 100vh;
+}
+.seller-body{
+    margin: 1.5rem 7%;
+}
+.seller-body h1{
+    width: 75%;
 }
 header{
     background-color: #fff;
@@ -315,4 +324,98 @@ td:first-of-type, tr th:first-of-type{
 }
 tbody tr:hover, tbody td:hover, tbody td:before{
     background-color: rgba(44, 44, 44, 0.2);
+}
+@media (min-width:600px){
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    h6{
+        font-size: 16px;
+    }
+    /* HEADER */
+    .mainHeader{
+        margin: 0 7%;
+    }
+    .mainHeader>div:not(.logo){
+        width: 20%;
+    }
+    .burguerMenu{
+        display: none;
+    }
+    .user-icon span.dis-none{
+        display: inline-block;
+    }
+    .user-icon{
+        display:flex;
+        /* width: 40%; */
+        justify-content: space-around;
+    }
+    .user-icon a{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-icon i{
+        font-size: 1.3em;
+    }
+    .user-icon span{
+        font-size: .6em;
+    }
+    .seller-body h1{
+        width: 100%;
+    }
+    main.seller-body>section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+    .img-bienvenida{
+        width: 45%;
+        margin: auto;
+    }
+    form.sellers-bienvenida-form{
+        width: 50%;
+    }
+    .seller-body{
+        margin-bottom: auto;
+        margin-top: 2em;
+    }
+    .btn-submit{
+        height: auto;
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 1024px){
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 15px;
+    }
 }
