@@ -23,7 +23,7 @@
         height: 72px;
     }
     .banner{
-        height: 55vh;
+        max-height: 55vh;
         overflow: hidden;
     }
     .articulosDestacados h2{
@@ -52,23 +52,62 @@
         font-size: 13pt;
     }
     /* Articulos y productos */
-    #art-destacados-flex .artBox{
-        min-width: 20%;
+    img{
+        width: 100%;
+        height: 100%;
     }
-    #prodBox, #art-destacados-flex .artBox{
-        height: 45vh;
+    #art-destacados-flex .artBox{
+        height: 370px;
+    }
+    .artBox .imagen{
+        /* height: 230px; */
+        text-align: center;
+    }
+    .artBox .descripcion{
+        padding: 1em;
+        justify-content: space-between;
     }
     .artBox p, #prodBox p{
-        font-size: 12pt
+        font-size: 13.5pt;
+        padding: 0;
     }
+    #prodBox{
+        height: 350px;
+    }
+    .descripcion p.price, #prodBox p.price{
+        font-size: 20px;
+    }
+    .artBox p:last-of-type, #prodBox p:last-of-type{
+        font-size: 12pt;
+    }
+    /* descuento stamp */
+    .descuento-stamp{
+        font-size: 11pt;
+    }
+    /* suscribite para mas novedades */
     .novedades h5{
         font-size: 30px;
     }
     /* pag productos */
-    .descripcion-producto h1{
-        overflow: visible;
+    .producto-carrousel > div:first-of-type{
+        grid-template-columns: 5em 1fr;
+        grid-template-rows: repeat(6, 5em);
+        grid-gap: .4em;
     }
-
+    .artBox-prodCarrousel:nth-of-type(1){
+        grid-column-start: 2 ;
+        grid-row-start: 1;
+        grid-row-end: -1;
+    } 
+    .descripcion-seccion p, .descripcion-seccion span{
+        font-size: 18px;
+    }
+    .producto-carrousel{
+        width: 56%;
+    }
+    .producto-carrousel-tablet section:last-of-type{
+        width: 42%;
+    }
     /* FOOTER */
     footer#buyers{
         min-height: 40vh;
