@@ -102,8 +102,6 @@
     #art-destacados-flex{
        width: 90%;
        margin-top: 1rem;
-       /* margin: 0; */
-
     }
     .artBox:not(:last-of-type) {
         margin-right: 20px;

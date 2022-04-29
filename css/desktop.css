@@ -48,16 +48,34 @@
     .helpIcons i{
         font-size: 1.5em;
     }
+    .enviosycuotas{
+        font-size: 13pt;
+    }
     /* Articulos y productos */
     #art-destacados-flex .artBox{
         min-width: 20%;
     }
     #prodBox, #art-destacados-flex .artBox{
-        height: 40vh;
+        height: 45vh;
     }
+    .artBox p, #prodBox p{
+        font-size: 12pt
+    }
+    .novedades h5{
+        font-size: 30px;
+    }
+    /* pag productos */
+    .descripcion-producto h1{
+        overflow: visible;
+    }
+
     /* FOOTER */
     footer#buyers{
-        min-height: 30vh;
+        min-height: 40vh;
+    }
+    .buyers-footer section{
+        min-width: 20%;
+        font-size: 12pt;
     }
 
 }
