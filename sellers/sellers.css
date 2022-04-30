@@ -88,6 +88,15 @@ header{
     margin-left: 3pt;
     border-radius: 3px;
 }
+.mi-tienda h4:not(:first-of-type), .mi-tienda h3:not(:first-of-type){
+    margin: 2.5em 0 0.5em;
+}
+.opc-agregar-mas{
+    margin-bottom: 0;
+}
+.carrito-form, .opt-right{
+    margin-top: 1em;
+}
 .opt-box ul{
     margin-top: .8em;
 }
@@ -213,6 +222,8 @@ label{
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1em;
     grid-column-gap: 15%;
+    width: 80%;
+    margin: 0 auto;
 }
 .text-aclarativo{
     color:rgba(44, 44, 44, 0.6);
@@ -228,6 +239,7 @@ textarea{
 .checkbox-opt{
     display: grid;
     row-gap: .3em;
+    width: 50%;
 }
 .checkbox-opt span{
     display: flex;
@@ -282,6 +294,9 @@ input[type=checkbox]:active, input[type=checkbox]:checked:active {
 .input-css{
     color:#0D60F0
 }
+.categorias-seller>form>h2{
+    margin: 1.5em 0 1em;
+}
 .download-box{
     align-items: flex-start;
 }
@@ -326,28 +341,14 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     background-color: rgba(44, 44, 44, 0.2);
 }
 @media (min-width:600px){
-    h1{
-        font-size: 45px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 30px;
-    }
-    h4{
-        font-size: 25px;
-    }
-    h5{
-        font-size: 20px;
-        font-weight: 500;
-    }
-    h6{
-        font-size: 16px;
-    }
     /* HEADER */
+    header{
+        /* box-shadow:none; */
+    }
     .mainHeader{
         margin: 0 7%;
+        padding:0;
+        box-shadow:none;
     }
     .mainHeader>div:not(.logo){
         width: 20%;
@@ -397,25 +398,27 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         height: auto;
         font-size: 11pt;
     }
+    .marco-externo main.mx-10{
+        margin: 0 20%;
+    }
+    .marco-externo>h1{
+        padding-left: 20%;
+    }
+    .opciones-producto>div.mt-1 {
+        display: flex;
+    }
+    form.sellers-bienvenida-form{
+        width: 100%;
+    }
+    .checkbox-opt{
+        width: 100%;
+    }
+    .download-box span {
+        width: 93%;
+    }
+    
 }
 
 @media (min-width: 1024px){
-    h1{
-        font-size: 70px;
-    }
-    h2{
-        font-size: 50px;
-    }
-    h3{
-        font-size: 40px;
-    }
-    h4{
-        font-size: 25px;
-    }
-    h5{
-        font-size: 20px;
-    }
-    h6{
-        font-size: 15px;
-    }
+
 }

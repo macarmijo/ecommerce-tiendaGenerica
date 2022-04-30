@@ -219,9 +219,11 @@ form div.opciones-producto>div{
     border: none;
     border-bottom: 2px solid #2c2c2c8f;
     width: 100%;
-    margin-bottom: 1.2em;
     padding: 2%;
     color:rgba(44, 44, 44, 0.8);
+}
+.carrito-form input:not(.opc-agregar-mas){
+    margin-bottom: 1.2em;
 }
 input[type=number]{
     appearance: textfield;

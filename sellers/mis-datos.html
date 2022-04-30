@@ -13,6 +13,9 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <link rel="stylesheet" href="../css/btn.css">
     <link rel="stylesheet" href="sellers.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
@@ -28,80 +31,87 @@
                 <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
             </div>
             <div class="user-icon">
+                <a href="" class="dis-none">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Más info</span>
+                </a>
                 <a href="mis-datos.html">
                     <i class="fa-solid fa-user"></i>
+                    <span class="dis-none">Mis cuenta</span>
                 </a>
             </div>
         </section> 
     </header>
-    <h1 class="pl-7 py-2 cart-title mt-3">Mis Datos</h1>
-    <main class="seller-body mx-10 my-4">
-
-        <form action="" class="my-4 sellers-bienvenida-form">
-            <label for="">Nombre de la tienda</label>
-            <input type="text" name="" id="" >
+    <div class="marco-externo">
+        <h1 class="pl-7 py-2 cart-title mt-3">Mis Datos</h1>
+        <main class="seller-body mx-10 my-4">
+    
+            <form action="" class="my-4 sellers-bienvenida-form">
+                <label for="">Nombre de la tienda</label>
+                <input type="text" name="" id="" >
+                
+                <label for="">Email</label>
+                <input type="email" name="" id="" >
             
-            <label for="">Email</label>
-            <input type="email" name="" id="" >
-        
-            <label for="">País</label>
-            <input type="text" name="" id="" >
-            
-            <label for="">Nombre y Apellido / Empresa</label>
-            <input type="text" name="" id="" >
-            
-            <label for="">ID</label>
-            <input type="number" name="" id="" >
-            
-            <label for="">
-                Teléfono de contacto 
-                <span class="tooltipp d-inline-block">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
-                </span>
-            </label>
-            <input type="text" name="" id="" >
-            
-
-            <section class="opciones-producto mt-3">
-                <label>Selección 1</label>
-                <div class="mt-1">
-                    <select name="selec1" id="selec1">
-                        <option>Opción 1</option>
-                        <option>Opción 2</option>
-                        <option>Opción 3</option>
-                    </select>
-                    <i class="fa-solid fa-arrow-down"></i>
-                </div>
-                <label class="mt-4">Selección 2</label>
-                <div class="mt-1">
-                    <select name="selec1" id="mis-datos-selec1">
-                        <option>Opción 1</option>
-                        <option>Opción 2</option>
-                        <option>Opción 3</option>
-                    </select>
-                    <i class="fa-solid fa-arrow-down"></i>
-                </div>
-            </section>
-            <section class="opt-box">
-                <label>Select Box</label>
-                <div class="mt-2">
-                    <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>
-                    <label for="opc1">Opción 1</label>
-                </div>
-                <div>
-                    <input type="radio" id="opc2" name="opcion2" value="opc2" />
-                    <label for="opc2">Opción 2</label>
-                </div>
-                <div>
-                    <input type="radio" id="opc3" name="opcion3" value="opc3"/>
-                    <label for="opc3">Opción 3</label>
-                </div>
-            </section>
-
-            <button type="submit" class="text-uppercase btn-submit">guardar</button>
-        </form>
-    </main>
+                <label for="">País</label>
+                <input type="text" name="" id="" >
+                
+                <label for="">Nombre y Apellido / Empresa</label>
+                <input type="text" name="" id="" >
+                
+                <label for="">ID</label>
+                <input type="number" name="" id="" >
+                
+                <label for="">
+                    Teléfono de contacto 
+                    <span class="tooltipp d-inline-block">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
+                    </span>
+                </label>
+                <input type="text" name="" id="" >
+                
+    
+                <section class="opciones-producto mt-3">
+                    <label>Selección 1</label>
+                    <div class="mt-1">
+                        <select name="selec1" id="selec1">
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <label class="mt-4">Selección 2</label>
+                    <div class="mt-1">
+                        <select name="selec1" id="mis-datos-selec1">
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </section>
+                <section class="opt-box">
+                    <label>Select Box</label>
+                    <div class="mt-2">
+                        <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>
+                        <label for="opc1">Opción 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="opc2" name="opcion2" value="opc2" />
+                        <label for="opc2">Opción 2</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="opc3" name="opcion3" value="opc3"/>
+                        <label for="opc3">Opción 3</label>
+                    </div>
+                </section>
+    
+                <button type="submit" class="text-uppercase btn-submit">guardar</button>
+            </form>
+        </main>
+    </div>
     <footer>
         <div class="sellers-footer">
             <p>Copyright - Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos <a href="#" target="_blank">ingrese aquí</a></p>

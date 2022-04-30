@@ -13,6 +13,9 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <link rel="stylesheet" href="../css/btn.css">
     <link rel="stylesheet" href="sellers.css">
     <!-- Font awesome ICONS -->
     <script src="https://kit.fontawesome.com/97842a5c24.js" crossorigin="anonymous"></script>
@@ -28,89 +31,96 @@
                 <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
             </div>
             <div class="user-icon">
+                <a href="" class="dis-none">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Más info</span>
+                </a>
                 <a href="mis-datos.html">
                     <i class="fa-solid fa-user"></i>
+                    <span class="dis-none">Mis cuenta</span>
                 </a>
             </div>
         </section> 
     </header>
-    <h1 class="cart-title mt-3">Configuraciones</h1>
-    <main class="mx-10 my-4">
-        <form action="" method="">
-            <section>
-                <h3 class="mt-4 mb-2">Métodos de envío</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <span class="text-aclarativo">Locales para retirar (ingresar dirección, horarios, etc).</span>
-            </section>
-            <section class="w-50 mt-4 checkbox-opt">
-                <h3 class="mb-2">Métodos de pago</h3>
-                <span class="">
-                    <input type="checkbox" id="credito" name="credito" value="credito" checked/>
-                    <label for="credito">Tarjeta de crédito</label>
-                </span>
-                <span class="">
-                    <input type="checkbox" id="debito" name="debito" value="debito" />
-                    <label for="credito">Tarjeta de débito</label>
-                </span>
-                <span class="">
-                    <input type="checkbox" id="transferencia" name="transferencia" value="transferencia" />
-                    <label for="credito">Transferencia</label>
-                </span>
-                <span class="">
-                    <input type="checkbox" id="mp" name="mp" value="mp" />
-                    <label for="credito">Mercado Pago</label>
-                </span>
-            </section>
+    <div class="marco-externo">
+        <h1 class="cart-title mt-3">Configuraciones</h1>
+        <main class="mx-10 my-4">
+            <form action="" method="">
+                <section>
+                    <h3 class="mt-4 mb-2">Métodos de envío</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <span class="text-aclarativo">Locales para retirar (ingresar dirección, horarios, etc).</span>
+                </section>
+                <section class="mt-4 checkbox-opt">
+                    <h3 class="mb-2">Métodos de pago</h3>
+                    <span class="">
+                        <input type="checkbox" id="credito" name="credito" value="credito" checked/>
+                        <label for="credito">Tarjeta de crédito</label>
+                    </span>
+                    <span class="">
+                        <input type="checkbox" id="debito" name="debito" value="debito" />
+                        <label for="credito">Tarjeta de débito</label>
+                    </span>
+                    <span class="">
+                        <input type="checkbox" id="transferencia" name="transferencia" value="transferencia" />
+                        <label for="credito">Transferencia</label>
+                    </span>
+                    <span class="">
+                        <input type="checkbox" id="mp" name="mp" value="mp" />
+                        <label for="credito">Mercado Pago</label>
+                    </span>
+                </section>
 
-            <section class="mt-5 input-inline">
-                <h3>
-                    Descuento general
-                    <span class="tooltipp">
-                        <i class="fa-solid fa-circle-question"></i>
-                        <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
-                    </span>
-                </h3>
-                <div class="my-2">
-                    <input type="text" placeholder="%" value="" name="" id="">
-                    <input type="text" placeholder="Descripción descuento" value="" name="" id="">
-                </div>
-            </section>
+                <section class="mt-5 input-inline">
+                    <h3>
+                        Descuento general
+                        <span class="tooltipp">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
+                        </span>
+                    </h3>
+                    <div class="my-2">
+                        <input type="text" placeholder="%" value="" name="" id="">
+                        <input type="text" placeholder="Descripción descuento" value="" name="" id="">
+                    </div>
+                </section>
 
-            <section class="mt-5">
-                <h3>
-                    Códigos externos
-                    <span class="tooltipp">
-                        <i class="fa-solid fa-circle-info"></i>
-                        <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
-                    </span>
-                </h3>
-                <textarea name="" id="" cols="" rows="3" class="mt-2"></textarea>
-            </section>
+                <section class="mt-5">
+                    <h3>
+                        Códigos externos
+                        <span class="tooltipp">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
+                        </span>
+                    </h3>
+                    <textarea name="" id="" cols="" rows="3" class="mt-2"></textarea>
+                </section>
 
-            <section class="mt-5">
-                <h3>
-                    Dominios
-                    <span class="tooltipp">
-                        <i class="fa-solid fa-circle-question"></i>
-                        <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
-                    </span>
-                </h3>
-                <div class="mt-2">
-                    <input type="text" class="input-css mb-1" name="" id="" placeholder="" value="NombreTienda.SitioWeb.com" disabled>
-                    <span>
-                        <i class="fa-solid fa-pencil me-1"></i>
-                        Editar subdominio
-                    </span>
-                </div>
-            </section>
-            <section class="my-4 novedades">
-                <h5>Vincular dominio propio</h5>
-                <input type="email" name="" id="" value="">
-            </section>
-            
-            <button type="submit" class="text-uppercase btn-submit">guardar</button>
-        </form>
-    </main>
+                <section class="mt-5">
+                    <h3>
+                        Dominios
+                        <span class="tooltipp">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
+                        </span>
+                    </h3>
+                    <div class="mt-2">
+                        <input type="text" class="input-css mb-1" name="" id="" placeholder="" value="NombreTienda.SitioWeb.com" disabled>
+                        <span>
+                            <i class="fa-solid fa-pencil me-1"></i>
+                            Editar subdominio
+                        </span>
+                    </div>
+                </section>
+                <section class="my-4 novedades">
+                    <h5>Vincular dominio propio</h5>
+                    <input type="email" name="" id="" value="">
+                </section>
+                
+                <button type="submit" class="text-uppercase btn-submit">guardar</button>
+            </form>
+        </main>
+    </div>
     <footer>
         <div class="sellers-footer">
             <p>Copyright - Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos <a href="#" target="_blank">ingrese aquí</a></p>
