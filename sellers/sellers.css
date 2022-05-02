@@ -28,23 +28,37 @@ header{
     -webkit-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
     -moz-box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
     box-shadow:0px 1px 1px rgba(44, 44, 44, 0.7);
+    display: none;
 }
 .mainHeader{
     display:flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem 7%;
+    border-bottom: 1px solid #2c2c2c;
+
 }
 #logo{
-    width: 30% 
+    width: 40%;
+    margin: 0;
+}
+.burguerMenu{
+    justify-content: flex-start;
 }
 .mainHeader>div{
     width: 20%;
-    text-align: center;
+    text-align: end;
+}
+main.mis-datos, main.categorias-seller, main.mi-tienda{
+    margin-top: 1.5rem;
 }
 .user-icon a, .fa-google, .fa-facebook-square{
     font-size: 1.3em;
 } 
+main.mi-tienda, main.mis-datos, main.configuraciones{
+    margin: 1.5rem 7% 2rem;
+}
 .sellers-footer{
     background-color: rgba(44, 44, 44, 0.6);
     text-align: center;
@@ -63,7 +77,7 @@ header{
     width: 70%;
     margin: 0 auto;
 }
-.sellers-bienvenida-form label, .mi-tienda h4, .mi-tienda label{
+.sellers-bienvenida-form label, h4, .mi-tienda label{
     font-weight: bold;
     /* color: rgba(44, 44, 44, 1); */
 }
@@ -312,7 +326,10 @@ input[type=checkbox]:active, input[type=checkbox]:checked:active {
     color:#0D60F0
 }
 .categorias-seller>form>h2{
-    margin: 1.5em 0 1em;
+    margin: 0 0 1em;
+}
+.categorias-seller>form>h2:last-of-type{
+    margin-top: 1.5em;
 }
 .download-box{
     align-items: flex-start;
@@ -363,13 +380,34 @@ tbody tr:hover, tbody td:hover, tbody td:before{
 }
 @media (min-width:600px){
     /* HEADER */
-    header{
-        /* box-shadow:none; */
+    header, .categorias{
+        display: block;
+        padding: 0;
+    }
+    main.categorias-seller{
+        margin-bottom: auto
     }
     .mainHeader{
-        margin: 0 7%;
-        padding:0;
         box-shadow:none;
+        position: relative;
+    }
+    .mainHeader div{
+        text-align: center;
+    }
+    .categorias ul li{
+        padding: 1rem 2pt;
+        text-align: center;
+    }
+    .categorias li:hover{
+        background-color: rgba(44, 44, 44, 0.1);
+        /* font-size: 13pt; */
+    }
+    #logo{
+        width: 20%;
+    }
+    .mi-posicion{
+        border-bottom: 1px solid #2c2c2c;
+        font-weight: bold;
     }
     .mainHeader>div:not(.logo), .mis-datos .opt-box div{
         width: 25%;

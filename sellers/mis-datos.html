@@ -22,38 +22,38 @@
     <title>Home page</title>
 </head>
 <body>
+    <section class="mainHeader">
+        <div class="burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="logo">
+            <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
+        </div>
+        <div class="user-icon">
+            <a href="" class="dis-none">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Más info</span>
+            </a>
+            <a href="mis-datos.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="dis-none">Mi cuenta</span>
+            </a>
+        </div>
+    </section>
     <header>
-        <section class="mainHeader">
-            <div class="burguerMenu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div id="logo">
-                <a href="/ecommerce-tiendaGenerica/index.html"><img src="../img/logo-ejemplo.png" alt="logo"></a>
-            </div>
-            <div class="user-icon">
-                <a href="" class="dis-none">
-                    <i class="fa-solid fa-circle-question"></i>
-                    <span>Más info</span>
-                </a>
-                <a href="mis-datos.html">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="dis-none">Mi cuenta</span>
-                </a>
-            </div>
-        </section>
         <navbar class="categorias">
             <ul>
-                <li><a href="">Mis Datos <i class="fa-solid fa-angle-down"></i></a></li>
-                <li><a href="">Mi Tienda</a></li>
-                <li><a href="">Configuraciones</a></li>
-                <li><a href="">Producto</a></li>
-                <li><a href="">Venta</a></li>
+                <li><a href="mis-datos.html">Mis Datos <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="mi-tienda.html">Mi Tienda</a></li>
+                <li><a href="configuraciones.html">Configuraciones</a></li>
+                <li><a href="categorias.html" class="mi-posicion">Catálogo</a></li>
+                <li><a href="ventas.html">Venta</a></li>
             </ul>
         </navbar>
     </header>
     <div class="marco-externo">
-        <h1 class="pl-7 py-2 cart-title mt-3">Mis Datos</h1>
-        <main class="seller-body mis-datos mx-10 my-4">
+        <h1 class="pl-7 py-2 cart-title">Mis Datos</h1>
+        <main class="seller-body mis-datos">
     
             <form action="" class="my-4 sellers-bienvenida-form">
                 <label for="">Nombre de la tienda</label>
