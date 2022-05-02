@@ -325,10 +325,10 @@ input[type=checkbox]:active, input[type=checkbox]:checked:active {
 .input-css{
     color:#0D60F0
 }
-.categorias-seller>form>h2{
+.categorias-seller>form>div>h2{
     margin: 0 0 1em;
 }
-.categorias-seller>form>h2:last-of-type{
+.categorias-seller>form>div>h2:last-of-type{
     margin-top: 1.5em;
 }
 .download-box{
@@ -398,6 +398,9 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         padding: 1rem 2pt;
         text-align: center;
     }
+    .categorias ul li:first-of-type {
+        width: 30%;
+    }
     .categorias li:hover{
         background-color: rgba(44, 44, 44, 0.1);
         /* font-size: 13pt; */
@@ -457,8 +460,11 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         height: auto;
         font-size: 11pt;
     }
-    .marco-externo main.mx-10{
+    .marco-externo main{
         margin: 0 10%;
+    }
+    h1.cart-title{
+        padding-left: 7%;
     }
     .marco-externo>h1{
         padding-left: 10%;
@@ -550,5 +556,105 @@ tbody tr:hover, tbody td:hover, tbody td:before{
 }
 
 @media (min-width: 1024px){
-
+    .mainHeader{
+        margin-top: 0;
+    }
+    .user-icon span{
+        font-size: .7em;
+    }
+    #sellers .seller-body{
+        margin-right: 0;
+    }
+    .img-bienvenida{
+        width: 40%;
+    }
+    #sellers form.sellers-bienvenida-form{
+        width: 40%;
+    }
+    #sellers form.sellers-bienvenida-form input{
+        width: 80%;
+        margin: 0 10% 2rem;
+    }
+    #sellers .btn-submit:first-of-type:not(.btn-register){
+        width: 60%;
+        margin-top: 0;
+    }
+    #sellers .btn-register{
+        width: 80%;
+    }
+    #sellers .seller-body>section{
+        margin-bottom: 3rem;
+    }
+    #sellers h1{
+        font-size: 55px;
+    }
+    .user-icon i{
+        font-size: 1.3em;
+        margin-bottom: .1em;
+    }
+    /* BTN */
+    .btn-submit, .btn-submit-gen {
+        width: 342px;
+        height: 52px;
+    }
+    .novedades{
+        flex-direction: row;
+    }
+    .novedades h5{
+        font-size: 25px;
+        width: 60%;
+    }
+    /* categorias - catalogo */
+    main.categorias-seller{
+        margin: 2rem 7%;
+    }
+    .download-box i{
+        font-size: 1.3em;
+    }
+    .download-box span{
+        width: 90%;
+    }
+    .categorias-seller>form>div>h2{
+        margin-bottom: .5em;
+    }
+    .categorias-seller > form > div > h2:last-of-type{
+        margin-top: 1em;
+    }
+    .categorias-seller>form{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .categorias-seller>form>section{
+        width: 50%;
+    }
+    .categorias-seller>form>div{
+        width: 55%;
+    }
+    /* ventas */
+    td:first-of-type, tr th:first-of-type {
+        min-width: 7vw;
+    }
+    .tabla-ventas td:not(:first-of-type), th:not(:first-of-type){
+        min-width: 10vw;
+        /* permite dejar la caja en una linea. SI la comento el texto sigue para abajo */
+        white-space: nowrap;
+    }
+    .tabla-ventas{
+        margin-bottom: 2rem;
+    }
+    .tabla-ventas td:last-of-type, th:last-of-type{
+        min-width: auto;
+    }
+    td i{
+        font-size: 1.2em;
+    }
+    .ready{
+        /* background-color:rgb(16, 171, 16, 0.8);
+        color: #fff ; */
+        color:rgb(20, 236, 20);
+    }
+    .disabled{
+        color: rgba(44, 44, 44, 0.4)
+    }
 }
