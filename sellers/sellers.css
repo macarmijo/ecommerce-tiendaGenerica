@@ -63,15 +63,29 @@ header{
     width: 70%;
     margin: 0 auto;
 }
+.sellers-bienvenida-form label, .mi-tienda h4, .mi-tienda label{
+    font-weight: bold;
+    /* color: rgba(44, 44, 44, 1); */
+}
+h4{
+    margin-top: 3rem;
+}
 .sellers-bienvenida-form input:not(input[type=radio], input[type=file]){
     border: none;
     border-bottom: 2px solid #2c2c2c8f;
-    width: 100%;
-    margin-bottom: 1.2em;
-    padding: 2%;
+    padding: 1% 2%;
     color:rgba(44, 44, 44, 1);
 }
-
+div.opciones-producto, .mis-datos .opciones-producto>div:not(.opc-prod-exp), .sellers-bienvenida-form input:not(input[type=radio], input[type=file]){
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.opc-prod-exp{
+    margin-bottom: 1rem
+}
+/* .opc-prod-100 select{
+    padding: 3% 4%;
+} */
 .required:hover{
     color:rgba(44, 44, 44, 0.4)
 }
@@ -221,9 +235,12 @@ label{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1em;
-    grid-column-gap: 15%;
-    width: 80%;
+    grid-column-gap: 10%;
+    /* width: 80%; */
     margin: 0 auto;
+}
+.opt-right label{
+    margin-right: 2%;
 }
 .text-aclarativo{
     color:rgba(44, 44, 44, 0.6);
@@ -306,6 +323,10 @@ input[type=checkbox]:active, input[type=checkbox]:checked:active {
 .download-box strong{
     display: block
 }
+main.ventas{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 .searchBox-ventas div{
     padding: 0;
 }
@@ -350,8 +371,8 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         padding:0;
         box-shadow:none;
     }
-    .mainHeader>div:not(.logo){
-        width: 20%;
+    .mainHeader>div:not(.logo), .mis-datos .opt-box div{
+        width: 25%;
     }
     .burguerMenu{
         display: none;
@@ -369,7 +390,7 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         flex-direction: column;
     }
     .user-icon i{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .user-icon span{
         font-size: .6em;
@@ -399,24 +420,95 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         font-size: 11pt;
     }
     .marco-externo main.mx-10{
-        margin: 0 20%;
+        margin: 0 10%;
     }
     .marco-externo>h1{
-        padding-left: 20%;
+        padding-left: 10%;
     }
     .opciones-producto>div.mt-1 {
         display: flex;
     }
-    form.sellers-bienvenida-form{
-        width: 100%;
-    }
-    .checkbox-opt{
+    form.sellers-bienvenida-form, .checkbox-opt, .opt-right, .opt-box>label, .novedades input{
         width: 100%;
     }
     .download-box span {
         width: 93%;
     }
-    
+    .opt-right {
+        grid-template-columns: repeat(3,1fr);
+    }
+    section.opciones-producto>div{
+        width: 90%;
+    }
+    .mis-datos .opciones-producto > div:not(.opc-prod-exp), .opc-prod-exp{
+        margin-bottom: 0;
+    }
+    .opciones-producto, div.opciones-producto label{
+        margin-top: 0;
+    }
+    section.opciones-producto{
+        margin: 0 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    section.opciones-producto>label{
+        margin-top: auto;
+        margin-left: 5%;
+    }
+    section.opciones-producto>label:last-of-type{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin-top: auto;
+    }
+    section.opciones-producto i{
+        top:25%;
+        right: 10%;
+    }
+    .opt-box, .opt-box div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .opt-box div{
+        justify-content: flex-start;
+    }
+    .opc-prod-100 select{
+        font-size: 15px;
+    }
+    /* MI TIENDA */
+    .mi-tienda .opt-right{
+        grid-column-gap: 8%;
+    }
+    .mi-tienda .flex-row{
+        display: block;
+    }
+    .mi-tienda label{
+        font-size: 16px;
+    }
+    /* COnfiguraciones */
+    .checkbox-opt{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .checkbox-opt h4{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .novedades{
+        flex-direction: column;
+    }
+    .ventas-tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ventas-tablet .searchBox-ventas{
+        width: 60%;
+    }
+    main.ventas{
+        margin-bottom: auto;
+    }
 }
 
 @media (min-width: 1024px){

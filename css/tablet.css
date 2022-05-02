@@ -237,7 +237,7 @@
     form .opciones-producto label{
         margin-bottom: 0.25rem
     }
-    form .opciones-producto label:last-of-type, .opciones-producto{
+    main.producto .opciones-producto label:last-of-type, .opciones-producto{
         margin-top: .75rem;
     }
     .opciones-producto select{

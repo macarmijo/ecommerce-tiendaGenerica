@@ -37,18 +37,27 @@
                 </a>
                 <a href="mis-datos.html">
                     <i class="fa-solid fa-user"></i>
-                    <span class="dis-none">Mis cuenta</span>
+                    <span class="dis-none">Mi cuenta</span>
                 </a>
             </div>
-        </section> 
+        </section>
+        <navbar class="categorias">
+            <ul>
+                <li><a href="">Mis Datos <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="">Mi Tienda</a></li>
+                <li><a href="">Configuraciones</a></li>
+                <li><a href="">Producto</a></li>
+                <li><a href="">Venta</a></li>
+            </ul>
+        </navbar>
     </header>
     <div class="marco-externo">
         <h1 class="cart-title mt-3">Mi tienda</h1>
-        <main class="mx-10 my-4 mi-tienda">
+        <main class="mx-10 mb-4 mi-tienda">
             <form action="" method="">
                 <section class="cargar-file">
-                    <h3 class="mb-1">Diseño</h3>
-                    <h4 class="d-inline-block"> Logo </h4>
+                    <h4 class="mb-2">Diseño</h4>
+                    <h5 class="d-inline-block"> Logo </h6>
                     <span class="tooltipp">
                         <i class="fa-solid fa-circle-info"></i>
                         <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
@@ -62,27 +71,27 @@
                     </div>
                 </section>
                 <section class="mt-3 opt-right">
-                    <span class="flex-row">
+                    <span>
                         <label for="opc1">Color Header</label>
                         <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>
                     </span>
-                    <span class="flex-row">
+                    <span>
                         <label for="opc2">Color Body</label>
                         <input type="radio" id="opc2" name="opcion2" value="opc2" />
                     </span>
-                    <span class="flex-row">
+                    <span>
                         <label for="opc3">Color Footer</label>
                         <input type="radio" id="opc3" name="opcion3" value="opc3"/>
                     </span>
                 </section>
                 <section class="cargar-file mt-4">
-                    <h4>
+                    <h5>
                         Carrousel Home 
                         <span class="tooltipp d-inline-block">
                             <i class="fa-solid fa-circle-info"></i>
                             <span class="tooltiptextt">Podrás modificarlo cuando quieras.</span>
                         </span>
-                    </h4>
+                    </h5>
                     <div class="sbt-file">
                         <input type="file" name="" id="file-input" value="">            
                         <div>
@@ -92,13 +101,13 @@
                     </div>
                 </section>
                 <section class="mt-4">
-                    <h4>Banner</h4>
+                    <h5>Banner</h5>
                     <div class="opt-right">
-                        <span class="flex-row">
+                        <span>
                             <label for="opc1">Color Fondo</label>
                             <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>
                         </span>
-                        <span class="flex-row">
+                        <span>
                             <label for="opc2">Color Texto</label>
                             <input type="radio" id="opc2" name="opcion2" value="opc2" />
                         </span>
@@ -108,8 +117,8 @@
                         <input type="text" name="" id="" placeholder="Título">
                     </div>
                 </section>
-                <section class="mt-4">
-                    <h3>Páginas Adicionales</h3>
+                <section>
+                    <h4>Páginas Adicionales</h4>
                     <div class="carrito-form">
                         <label for="">Página 1</label>
                         <input type="text" name="" id="" class="opc-agregar-mas" placeholder="Título">
@@ -117,8 +126,8 @@
                     <button type="button" class="btn-add">+ Agregar otra página</button>
     
                 </section>
-                <section class="mt-4">
-                    <h3>Información de contacto</h3>
+                <section>
+                    <h4>Información de contacto</h4>
                     <div class="carrito-form">
                         <label for="">Email de la tienda</label>
                         <input type="text" name="" id="" placeholder="tienda@pretti.com">
@@ -131,8 +140,8 @@
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <span class="text-aclarativo">Esta Información se mostrará en el footer.</span>
                 </section>
-                <section class="opciones-producto mt-4">
-                    <label id="seleccion1">Selección 1</label>
+                <section class="opciones-producto mt-3">
+                    <label>Selección 1</label>
                     <div class="mt-1">
                         <select name="selec1" id="selec1">
                             <option>Opción 1</option>
@@ -143,15 +152,15 @@
                     </div>
                     <label class="mt-4">Selección 2</label>
                     <div class="mt-1">
-                        <select name="selec1" id="tienda-selec1">
+                        <select name="selec1" id="mis-datos-selec1">
+                            <option>Opción</option>
                             <option>Opción 1</option>
                             <option>Opción 2</option>
-                            <option>Opción 3</option>
                         </select>
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
                 </section>
-                <section class="opt-box mt-4">
+                <section class="opt-box">
                     <label>Select Box</label>
                     <div class="mt-2">
                         <input type="radio" id="opc1" name="opcion1" value="opc1" checked/>

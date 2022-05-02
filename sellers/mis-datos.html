@@ -37,14 +37,23 @@
                 </a>
                 <a href="mis-datos.html">
                     <i class="fa-solid fa-user"></i>
-                    <span class="dis-none">Mis cuenta</span>
+                    <span class="dis-none">Mi cuenta</span>
                 </a>
             </div>
-        </section> 
+        </section>
+        <navbar class="categorias">
+            <ul>
+                <li><a href="">Mis Datos <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="">Mi Tienda</a></li>
+                <li><a href="">Configuraciones</a></li>
+                <li><a href="">Producto</a></li>
+                <li><a href="">Venta</a></li>
+            </ul>
+        </navbar>
     </header>
     <div class="marco-externo">
         <h1 class="pl-7 py-2 cart-title mt-3">Mis Datos</h1>
-        <main class="seller-body mx-10 my-4">
+        <main class="seller-body mis-datos mx-10 my-4">
     
             <form action="" class="my-4 sellers-bienvenida-form">
                 <label for="">Nombre de la tienda</label>
@@ -53,8 +62,18 @@
                 <label for="">Email</label>
                 <input type="email" name="" id="" >
             
-                <label for="">País</label>
-                <input type="text" name="" id="" >
+                <div class="opciones-producto">
+                    <label for="">País</label>
+                    <div>
+                        <select name="selec1" id="selec1">
+                            <option>Opción</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                        </select>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <!-- <input type="text" name="" id="" > -->
                 
                 <label for="">Nombre y Apellido / Empresa</label>
                 <input type="text" name="" id="" >
@@ -72,9 +91,9 @@
                 <input type="text" name="" id="" >
                 
     
-                <section class="opciones-producto mt-3">
+                <section class="opciones-producto">
                     <label>Selección 1</label>
-                    <div class="mt-1">
+                    <div class="opc-prod-exp">
                         <select name="selec1" id="selec1">
                             <option>Opción 1</option>
                             <option>Opción 2</option>
@@ -82,12 +101,12 @@
                         </select>
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
-                    <label class="mt-4">Selección 2</label>
-                    <div class="mt-1">
+                    <label>Selección 2</label>
+                    <div>
                         <select name="selec1" id="mis-datos-selec1">
+                            <option>Opción</option>
                             <option>Opción 1</option>
                             <option>Opción 2</option>
-                            <option>Opción 3</option>
                         </select>
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
