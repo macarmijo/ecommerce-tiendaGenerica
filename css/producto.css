@@ -20,14 +20,19 @@
     margin-right: 3%;
     overflow-y: hidden;
 }
+.artBox-prodCarrousel .descuento-stamp{
+    width: 5em;
+    height: 5em;
+    font-size: 9pt;
+    left: calc(100% - 5em - 5%)
+}
 .descripcion-seccion, .descripcion-seccion-desktop{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .descripcion-seccion>span,  .descripcion-seccion-desktop>span{
     color: rgba(44, 44, 44, 0.8);
     font-size: 0.8em;
+    margin: 0 .5em;
 }
 .descripcion-seccion-desktop{
     display:none

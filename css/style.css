@@ -329,7 +329,7 @@ main.producto .articulosDestacados h3{
     display: none;
 }
 .artBox{
-    width: 40%;
+    min-width: 40%;
     min-height: 224px;
 }
 #prodBox{
@@ -343,19 +343,22 @@ main.producto .articulosDestacados h3{
     margin-left:0;
 }
 main#home>section.articulosDestacados>h2{
-    margin-bottom: 1em;
+    margin-bottom: .7em;
 }
 .sin-descuento{
     text-decoration-line: line-through;
     text-decoration-thickness: 2px;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    color:rgba(44, 44, 44, 0.8)
 }
 .artBox p, #prodBox p{
     font-size: 13px;
     text-align: center;
     line-height: 1.2em;
 }
-
+p.price, #prodBox p.price{
+    font-size: 15px;
+}
 .artBox .imagen, #prodBox .imagen{
     overflow: hidden;
     border-radius: 10px 10px 0 0;
@@ -379,7 +382,7 @@ main#home>section.articulosDestacados>h2{
     color: #2c2c2c;
 }
 .descripcion{
-    padding:.45em;
+    padding:.45em .1em;
 }
 .imagen{
     position:relative
@@ -450,6 +453,12 @@ footer#buyers{
 }
 .footer-icons>i{
     margin-right: 10px;
+}
+.contact-area{
+    display: flex;
+}
+.contact-area i{
+    color: rgba(44, 44, 44, 0.8)
 }
 
 /* BUTTONS */

@@ -398,9 +398,6 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         padding: 1rem 2pt;
         text-align: center;
     }
-    .categorias ul li:first-of-type {
-        width: 30%;
-    }
     .categorias li:hover{
         background-color: rgba(44, 44, 44, 0.1);
         /* font-size: 13pt; */
@@ -602,7 +599,7 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     }
     .novedades h5{
         font-size: 25px;
-        width: 60%;
+        width: 100%;
     }
     /* categorias - catalogo */
     main.categorias-seller{
@@ -636,9 +633,7 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         min-width: 7vw;
     }
     .tabla-ventas td:not(:first-of-type), th:not(:first-of-type){
-        min-width: 10vw;
-        /* permite dejar la caja en una linea. SI la comento el texto sigue para abajo */
-        white-space: nowrap;
+        min-width: 15vw;
     }
     .tabla-ventas{
         margin-bottom: 2rem;
