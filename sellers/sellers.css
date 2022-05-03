@@ -90,7 +90,7 @@ h4{
     padding: 1% 2%;
     color:rgba(44, 44, 44, 1);
 }
-div.opciones-producto, .mis-datos .opciones-producto>div:not(.opc-prod-exp), .sellers-bienvenida-form input:not(input[type=radio], input[type=file]){
+div.opciones-producto, .mis-datos .opciones-producto>div:not(.opc-prod-exp, .selec-pais), .sellers-bienvenida-form input:not(input[type=radio], input[type=file]){
     margin-bottom: 3rem;
     width: 100%;
 }
@@ -411,6 +411,12 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     }
     .mainHeader>div:not(.logo), .mis-datos .opt-box div{
         width: 25%;
+    }
+    .opciones-producto>div.selec-pais{
+        width: 50%;
+    }
+    .opciones-producto select{
+        font-size: 15px;
     }
     .burguerMenu{
         display: none;

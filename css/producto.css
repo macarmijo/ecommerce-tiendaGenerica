@@ -139,7 +139,6 @@ form div.opciones-producto>div{
     background-color: #0D60F0;
     width: 261px;
     height: 55px;
-    /* padding: 3% 8%; */
     border-radius: 40px;
     margin: 5rem auto;
     display: flex;
@@ -194,7 +193,6 @@ form div.opciones-producto>div{
 }
 #carrito-cantidad{
     width: 40%;
-    /* padding: .5%; */
 }
 #carrito-cantidad i {
     font-size: 1.4em;

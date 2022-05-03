@@ -90,8 +90,11 @@
         font-size: 12pt;
     }
     /* descuento stamp */
-    .descuento-stamp{
+    .artBox-prodCarrousel .descuento-stamp {
         font-size: 11pt;
+    }
+    .artBox-prodCarrousel .desc-stamp-prod{
+        font-size: 12pt;
     }
     /* suscribite para mas novedades */
     .novedades h5{
@@ -124,12 +127,6 @@
     .producto-carrousel-tablet section:last-of-type{
         width: 40%;
     }
-    /* form .opciones-producto label:last-of-type{
-        margin-top: 0;
-    } */
-    /* form div.opciones-producto > div{
-        margin-bottom: 1rem
-    } */
     .opc-pago p{
         font-size: 16px;
     }
@@ -150,8 +147,6 @@
     }
     .retiro-tienda div:last-of-type{
         width: 57%;
-        /* padding-right: 1em; */
-
     }
     .retiro-tienda{
         justify-content: space-between;
@@ -176,7 +171,6 @@
     }
     #compra-botones-tablet button{
         min-width: 135px;
-        /* font-size: 9pt; */
     }
     #compra-botones-tablet:last-of-type{
         width: 70%;
