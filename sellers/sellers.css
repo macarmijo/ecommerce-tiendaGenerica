@@ -394,19 +394,25 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     .mainHeader div{
         text-align: center;
     }
+    .categorias ul{
+        display: grid;
+        grid-template-columns: .6fr .8fr 1fr .8fr .6fr;
+        grid-column-gap: 0;
+    }
     .categorias ul li{
+        width: 100%;
         padding: 1rem 2pt;
         text-align: center;
     }
     .categorias li:hover{
         background-color: rgba(44, 44, 44, 0.1);
-        /* font-size: 13pt; */
     }
     #logo{
         width: 20%;
     }
     .mi-posicion{
-        border-bottom: 1px solid #2c2c2c;
+        /* border-bottom: 1px solid #2c2c2c; */
+        text-decoration: underline;
         font-weight: bold;
     }
     .mainHeader>div:not(.logo), .mis-datos .opt-box div{

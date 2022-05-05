@@ -177,7 +177,7 @@
     }
     /* FOOTER */
     footer#buyers{
-        min-height: 40vh;
+        /* min-height: 40vh; */
     }
     .buyers-footer section{
         min-width: 20%;

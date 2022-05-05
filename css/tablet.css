@@ -72,16 +72,24 @@
         margin: 0 auto;
     }
     .categorias ul{
+        /* display: grid; 
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: .1em; */
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin: 0;
-        justify-content: space-between;
-        align-items: center;
         font-size: 12pt;
     }
     .categorias ul li{
-        width: 25%;
+        width: auto;
         line-height: 1.2em;
         text-align: center;
+        margin-right: 5%;
+    }
+    .categorias ul li a{
+        display: inline-block;
+        width: 100%;
     }
     #categ-select{
         border: none;
@@ -306,7 +314,7 @@
     }
     /* footer */
     footer#buyers{
-        min-height: 30vh;
+        min-height: 200px;
         padding: 2em 0;
         display: flex;
         align-items: center;
