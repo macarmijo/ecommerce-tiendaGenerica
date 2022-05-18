@@ -6,7 +6,6 @@
 body{
     margin:0;
     font-family: 'DM Sans regular', sans-serif;
-    /* width: auto; */
 }
 
 a{
@@ -29,7 +28,6 @@ p, label{
 }
 
 h1, h2, h3, h4, h5, h6{
-    /* margin:0; */
     color: #2c2c2c;
 }
 h1, h2, h3{
@@ -279,7 +277,9 @@ header{
 .searchBox>div, .novedades{
     border-bottom: rgba(44, 44, 44, 0.7) solid 2px;
 }
-
+#searchBar:focus{
+    outline: none;
+}
 .searchBox>div>input, section>input{
     border: none;
     width: 100%;
@@ -408,7 +408,7 @@ p.price, #prodBox p.price{
 }
 
 /* PRODUCTOS */
-#productos-flex{
+#productos-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25pt;

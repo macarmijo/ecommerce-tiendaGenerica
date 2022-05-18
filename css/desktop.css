@@ -176,9 +176,6 @@
         width: 70%;
     }
     /* FOOTER */
-    footer#buyers{
-        /* min-height: 40vh; */
-    }
     .buyers-footer section{
         min-width: 20%;
         font-size: 12pt;

@@ -94,6 +94,9 @@ div.opciones-producto, .mis-datos .opciones-producto>div:not(.opc-prod-exp, .sel
     margin-bottom: 3rem;
     width: 100%;
 }
+.sellers-bienvenida-form input:not(input[type=radio]){
+    margin-bottom: 2em;
+}
 .opc-prod-exp{
     margin-bottom: 1rem
 }
@@ -445,6 +448,9 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     .user-icon span{
         font-size: .6em;
     }
+    #sellers .seller-body{
+        margin-right: 0;
+    }
     .seller-body h1{
         width: 100%;
     }
@@ -452,18 +458,27 @@ tbody tr:hover, tbody td:hover, tbody td:before{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-top: 2em;
     }
-    .img-bienvenida{
-        width: 45%;
-        margin: auto;
+    .form-login-email{
+        margin: 0 auto;
+        width: 95%;
     }
     form.sellers-bienvenida-form{
         width: 50%;
+        margin: auto 0;
+    }
+    .marco-externo form.sellers-bienvenida-form{
+        width: 100%;
+    }
+    .sellers-bienvenida-form input:not(input[type=radio]){
+        margin-bottom: 1em;
     }
     .seller-body{
         margin-bottom: auto;
         margin-top: 2em;
+    }
+    .seguir-compra{
+        font-size: 11pt;
     }
     .btn-submit{
         height: auto;
@@ -481,7 +496,7 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     .opciones-producto>div.mt-1 {
         display: flex;
     }
-    form.sellers-bienvenida-form, .checkbox-opt, .opt-right, .opt-box>label, .novedades input{
+    .checkbox-opt, .opt-right, .opt-box>label, .novedades input{
         width: 100%;
     }
     .download-box span {
@@ -490,13 +505,17 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     .opt-right {
         grid-template-columns: repeat(3,1fr);
     }
+    div.opc-prod-pais{
+        margin-bottom: 1em;
+        margin-top:0
+    }
     section.opciones-producto>div{
         width: 90%;
     }
     .mis-datos .opciones-producto > div:not(.opc-prod-exp), .opc-prod-exp{
         margin-bottom: 0;
     }
-    .opciones-producto, div.opciones-producto label{
+    div.opciones-producto label{
         margin-top: 0;
     }
     section.opciones-producto{
@@ -574,15 +593,18 @@ tbody tr:hover, tbody td:hover, tbody td:before{
     #sellers .seller-body{
         margin-right: 0;
     }
-    .img-bienvenida{
+    /* .img-bienvenida{
         width: 40%;
-    }
-    #sellers form.sellers-bienvenida-form{
+    } */
+    /* #sellers form.sellers-bienvenida-form{
         width: 40%;
     }
     #sellers form.sellers-bienvenida-form input{
         width: 80%;
         margin: 0 10% 2rem;
+    } */
+    .form-login-email{
+        width: 80%;
     }
     #sellers .btn-submit:first-of-type:not(.btn-register){
         width: 60%;
